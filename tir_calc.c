@@ -1147,8 +1147,6 @@ static void main_vdyncsmtire(real_T omega, real_T Vx, real_T Vy, real_T psidot,
         b_UNLOADED_RADIUS * phi;
     }
 
-// ----------------------------------------------------------------
-
     main_atan(&tmpDrphiVar_data, tmpDrphiVar_size);
     main_cos(&tmpDrphiVar_data, tmpDrphiVar_size);
     i = ob_size_idx_0;
@@ -1259,6 +1257,8 @@ static void main_vdyncsmtire(real_T omega, real_T Vx, real_T Vy, real_T psidot,
       zeta[3] = tmpDrphiVar_data;
     }
   }
+
+  //------------------------------------------------------------------------
 
   Kygammao = (b_PKY7 * dfz + b_PKY6) * *Fz * (b_PPY5 * dpi + 1.0) *
     scaleFactors[14];

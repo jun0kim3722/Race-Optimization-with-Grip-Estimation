@@ -1,0 +1,17 @@
+{
+    "makefile.makefilePath": "",
+    "files.associations": {
+        "main_types.h": "c",
+        "rtgetnan.h": "c",
+        "rt_defines.h": "c",
+        "stddef.h": "c",
+        "string.h": "c",
+        "emmintrin.h": "c",
+        "rtwtypes.h": "c",
+        "simstruc.h": "c",
+        "rt_nonfinite.h": "c",
+        "math.h": "c",
+        "fixedpoint.h": "c",
+        "stdlib.h": "c"
+    }
+}
