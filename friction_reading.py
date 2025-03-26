@@ -29,9 +29,9 @@ class firction_map(Node):
         else:
             print("Importing: ", tir_file)
     
-        self.tir["LF"] = json.loads(parser.get('GENERAL_OPTIONS', 'LF'))
-        self.tir["RF"] = json.loads(parser.get('GENERAL_OPTIONS', 'RF'))
-        self.tir["LR"] = json.loads(parser.get('GENERAL_OPTIONS', 'LR'))
+        self.tir["FL"] = json.loads(parser.get('GENERAL_OPTIONS', 'FL'))
+        self.tir["FR"] = json.loads(parser.get('GENERAL_OPTIONS', 'FR'))
+        self.tir["RL"] = json.loads(parser.get('GENERAL_OPTIONS', 'RL'))
         self.tir["RR"] = json.loads(parser.get('GENERAL_OPTIONS', 'RR'))
 
         self.odom = self.create_subscription(
@@ -59,6 +59,12 @@ class firction_map(Node):
             10)
     
     def friction_callback(self):
+        camber = [0, 0, 0, 0]
+        _, _, mFL = calculate_friction_coefficients(self.fl_speed, self.fl_load, camber[0], self.position.x, self.position.y, self.tir["FL"])
+        _, _, mFR = calculate_friction_coefficients(self.fr_speed, self.fr_load, camber[0], self.position.x, self.position.y, self.tir["FR"])
+        _, _, mRL = calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[0], self.position.x, self.position.y, self.tir["RL"])
+        _, _, mRR = calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[0], self.position.x, self.position.y, self.tir["RR"])
+
         
 
         json_string = json.dumps(self.friction_map)  # Convert dictionary to JSON string
