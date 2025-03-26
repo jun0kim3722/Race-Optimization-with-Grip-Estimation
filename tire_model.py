@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # *********************************** Plot functions ************************************************
-def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
+def plot_load_diff(omega, load, camber, vel_x, vel_y, pars):
     plt.figure(figsize=(20,20))
     plt.title("Force VS Load", fontsize='40')
     plt.axis('off')
@@ -12,7 +12,7 @@ def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
     coeffs = pars["LF"]
     grip_data_LF = []
     for load in np.arange(100, 14000, 100):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         friction_force = np.sqrt(Fx**2 + Fy**2)
         grip_data_LF.append([load, friction_force])
 
@@ -27,7 +27,7 @@ def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
     coeffs = pars["RF"]
     grip_data_RF = []
     for load in np.arange(100, 14000, 100):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         friction_force = np.sqrt(Fx**2 + Fy**2)
         grip_data_RF.append([load, friction_force])
 
@@ -42,7 +42,7 @@ def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
     coeffs = pars["LR"]
     grip_data_LR = []
     for load in np.arange(100, 14000, 100):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         friction_force = np.sqrt(Fx**2 + Fy**2)
         grip_data_LR.append([load, friction_force])
 
@@ -57,7 +57,7 @@ def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
     coeffs = pars["RR"]
     grip_data_RR = []
     for load in np.arange(100, 14000, 100):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         friction_force = np.sqrt(Fx**2 + Fy**2)
         grip_data_RR.append([load, friction_force])
 
@@ -71,7 +71,7 @@ def plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
 
     plt.show()
 
-def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
+def plot_slip_angle_diff(omega, load, camber, vel_x, vel_y, pars):
     plt.figure(figsize=(20, 20))
     plt.title("Lateral Force VS Slip Angle", fontsize='40')
     plt.axis('off')
@@ -79,7 +79,6 @@ def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
     coeffs = pars["LF"]
     grip_data_LF = []
     for slip_angle in np.arange(-0.5, 0.5, 0.001):
-        # Calculate v_lateral to be consistent with slip_angle
         friction_force = magic_formula_lateral(slip_angle, camber=camber, Fz=load, **coeffs["lateral"])
         grip_data_LF.append([slip_angle, friction_force])
 
@@ -94,7 +93,6 @@ def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
     coeffs = pars["RF"]
     grip_data_RF = []
     for slip_angle in np.arange(-0.5, 0.5, 0.001):
-        # Calculate v_lateral to be consistent with slip_angle
         friction_force = magic_formula_lateral(slip_angle, camber=camber, Fz=load, **coeffs["lateral"])
         grip_data_RF.append([slip_angle, friction_force])
 
@@ -109,7 +107,6 @@ def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
     coeffs = pars["LR"]
     grip_data_LR = []
     for slip_angle in np.arange(-0.5, 0.5, 0.001):
-        # Calculate v_lateral to be consistent with slip_angle
         friction_force = magic_formula_lateral(slip_angle, camber=camber, Fz=load, **coeffs["lateral"])
         grip_data_LR.append([slip_angle, friction_force])
 
@@ -124,7 +121,6 @@ def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
     coeffs = pars["RR"]
     grip_data_RR = []
     for slip_angle in np.arange(-0.5, 0.5, 0.001):
-        # Calculate v_lateral to be consistent with slip_angle
         friction_force = magic_formula_lateral(slip_angle, camber=camber, Fz=load, **coeffs["lateral"])
         grip_data_RR.append([slip_angle, friction_force])
 
@@ -138,7 +134,7 @@ def plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
 
     plt.show()
 
-def plot_slip_ratio_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
+def plot_slip_ratio_diff(omega, load, camber, vel_x, vel_y, pars):
     plt.figure(figsize=(20,20))
     plt.title("Longitutinal Force VS Slip ratio", fontsize='40')
     plt.axis('off')
@@ -200,7 +196,7 @@ def plot_slip_ratio_diff(speed, omega, load, camber, v_lateral, v_longitudinal, 
     plt.plot(grip_data_RR[max_grip,0], grip_data_RR[max_grip,1], 'o', color='r')
     plt.show()
 
-def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars):
+def plot_camber_diff(omega, load, camber, vel_x, vel_y, pars):
     plt.figure(figsize=(20,20))
     plt.title("Force VS Camber", fontsize='40')
     plt.axis('off')
@@ -208,7 +204,7 @@ def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars
     coeffs = pars["LF"]
     grip_data_LF = []
     for camber in np.arange(-0.087266, 0.087266, 0.001):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         grip_data_LF.append([camber, Fx])
 
     grip_data_LF = np.array(grip_data_LF)
@@ -222,7 +218,7 @@ def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars
     coeffs = pars["RF"]
     grip_data_RF = []
     for camber in np.arange(-0.087266, 0.087266, 0.001):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         grip_data_RF.append([camber, Fx])
 
     grip_data_RF = np.array(grip_data_RF)
@@ -236,7 +232,7 @@ def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars
     coeffs = pars["LR"]
     grip_data_LR = []
     for camber in np.arange(-0.087266, 0.087266, 0.001):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         grip_data_LR.append([camber, Fx])
 
     grip_data_LR = np.array(grip_data_LR)
@@ -250,7 +246,7 @@ def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars
     coeffs = pars["RR"]
     grip_data_RR = []
     for camber in np.arange(-0.087266, 0.087266, 0.001):
-        Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+        Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
         grip_data_RR.append([camber, Fx])
 
     grip_data_RR = np.array(grip_data_RR)
@@ -264,11 +260,11 @@ def plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars
     plt.show()
 
 # *********************************** Tire model ************************************************
-def calculate_slip_ratio(speed, omega, tire_radius):
-    return (tire_radius * omega - speed) / max(speed, tire_radius * omega)
+def calculate_slip_ratio(vel_x, omega, tire_radius):
+    return (tire_radius * omega - vel_x) / max(vel_x, tire_radius * omega)
 
-def calculate_slip_angle(v_lateral, v_longitudinal):
-    return np.arctan(v_lateral / v_longitudinal)
+def calculate_slip_angle(vel_x, vel_y):
+    return np.arctan(vel_y / vel_x)
 
 def load_sensitivity(D0, load, nominal_load, PFZ1):
     return D0 * (load / nominal_load) ** PFZ1
@@ -277,7 +273,7 @@ def magic_formula_longitudinal(kappa, Fz, camber, FNOMIN, PDX1, PDX2, PDX3, PKX1
     """
     Calculates the longitudinal force (Fx) using the Magic Formula, including camber effects.
 
-    Args:
+    Inputs:
         kappa: Longitudinal slip ratio.
         Fz: Vertical load. (N)
         camber: Camber angle (in radians).
@@ -291,7 +287,7 @@ def magic_formula_longitudinal(kappa, Fz, camber, FNOMIN, PDX1, PDX2, PDX3, PKX1
         PKX1: Longitudinal slip stiffness Kfx/Fz at Fznom.
         PKX2: Variation of slip stiffness Kfx/Fz with load.
 
-    Returns:
+    Output:
         Longitudinal force Fx.
     """
 
@@ -313,7 +309,7 @@ def magic_formula_lateral(alpha, Fz, camber, FNOMIN, PDY1, PDY2, PDY3, PKY2, PKY
     """
     Calculates the lateral force (Fy) using the Magic Formula, including all camber effects.
 
-    Args:
+    Inputs:
         alpha: Slip angle (in radians).
         Fz: Vertical load.(N)
         camber: Camber angle (in radians).
@@ -337,7 +333,7 @@ def magic_formula_lateral(alpha, Fz, camber, FNOMIN, PDY1, PDY2, PDY3, PKY2, PKY
         PHY1: Horizontal shift Shy at Fznom
         PHY2: Variation of shift Shy with load
 
-    Returns:
+    Output:
         Lateral force Fy.
     """
    
@@ -377,9 +373,9 @@ def combined_longitudinal_force(Fx, alpha, RBX1, RBX2, RBX3):
 def combined_lateral_force(Fy, kappa, RBY1, RBY2, RBY3):
     return Fy / (1 + RBY1 * abs(kappa) + RBY2 * kappa**2 + RBY3 * abs(kappa**3))
 
-def calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs):
-    kappa = calculate_slip_ratio(speed, omega, coeffs["spec"]["UNLOADED_RADIUS"])
-    alpha = calculate_slip_angle(v_lateral, v_longitudinal)
+def calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs):
+    kappa = calculate_slip_ratio(vel_x, omega, coeffs["spec"]["UNLOADED_RADIUS"])
+    alpha = calculate_slip_angle(vel_x, vel_y)
 
     Fx = magic_formula_longitudinal(kappa, Fz=load, camber=camber, **coeffs["longitudinal"])
     Fy = magic_formula_lateral(alpha, camber=camber, Fz=load, **coeffs["lateral"])
@@ -393,10 +389,9 @@ def calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudin
 
     return Fx, Fy
 
-def calculate_friction_coefficients(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs):
-    Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, coeffs)
+def calculate_friction_coefficients(omega, load, camber, vel_x, vel_y, coeffs):
+    Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
 
-    # Compute friction coefficients
     mu_x = Fx / load  # Longitudinal friction coefficient
     mu_y = Fy / load  # Lateral friction coefficient
     mu_t = np.sqrt(Fx**2 + Fy**2) / load  # Total friction coefficient
@@ -406,24 +401,22 @@ def calculate_friction_coefficients(speed, omega, load, camber, v_lateral, v_lon
 
 if __name__ == '__main__':
     """
-    speed: vehicle speed in meters per second.
     omega: wheel angular velocity in radians per second.
     load: vertical load on the tire in Newtons.
     camber: camber angle in degrees.
-    v_lateral: lateral velocity of the tire in meters per second.
-    v_longitudinal: longitudinal velocity of the tire in meters per second.
+    vel_x: longitudinal velocity of the tire in meters per second.
+    vel_y: lateral velocity of the tire in meters per second.
     """
-    speed = 15  # m/s
     omega = 100  # rad/s (angular velocity of the wheel)
     load = 4000  # N
     camber = 0.008  # radian
-    v_lateral = 5  # m/s
-    v_longitudinal = 15  # m/s
+    vel_x = 15  # m/s
+    vel_y = 5  # m/s
 
     parser = configparser.ConfigParser()
     pars = {}
     if not parser.read("assets/tir_param_advanced.ini"):
-        raise ValueError('Specified config file does not exist or is empty!')
+        raise ValueError('Specified config file does not exist!')
    
     pars["LF"] = json.loads(parser.get('GENERAL_OPTIONS', 'LF'))
     pars["RF"] = json.loads(parser.get('GENERAL_OPTIONS', 'RF'))
@@ -431,12 +424,12 @@ if __name__ == '__main__':
     pars["RR"] = json.loads(parser.get('GENERAL_OPTIONS', 'RR'))
     coeffs = pars["LF"]
 
-    plot_camber_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars)
-    plot_load_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars)
-    plot_slip_angle_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars)
-    plot_slip_ratio_diff(speed, omega, load, camber, v_lateral, v_longitudinal, pars)
+    plot_camber_diff(omega, load, camber, vel_x, vel_y, pars)
+    plot_load_diff(omega, load, camber, vel_x, vel_y, pars)
+    plot_slip_angle_diff(omega, load, camber, vel_x, vel_y, pars)
+    plot_slip_ratio_diff(omega, load, camber, vel_x, vel_y, pars)
 
     # Calculate refined friction force
-    Fx, Fy = calculate_friction_force(speed, omega, load, camber, v_lateral, v_longitudinal, pars["LF"])
+    Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, pars["LF"])
     friction_force = np.sqrt(Fx**2 + Fy**2)
     print(f"Friction Force: {friction_force} N")
