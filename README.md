@@ -9,7 +9,7 @@ Adapting to new environments is a critical challenge in autonomous driving, as t
 2. Tire grip estimation with CIP tire model from Simulink.
 3. Generating velocity profile with tire model & test it with TUM Minimum curvature trajectory planning.  
 [Heilmeier, A., Wischnewski, A., Hermansdorfer, L., Betz, J., Lienkamp, M., & Lohmann, B. (2019). Minimum curvature trajectory planning and control for an autonomous race car. Vehicle System Dynamics, 58(10), 1497–1527.](https://doi.org/10.1080/00423114.2019.1631455)
-5. Generate racing line optimization algorithm with exploration behavior for adoptive planning.
+5. Generate racing line optimization algorithm with exploration behavior for adaptive planning.
 
 ### Author:
 *Junyoung Kim @ Purdue University ECE*
