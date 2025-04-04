@@ -65,7 +65,11 @@ class firction_map(Node):
         _, _, mRL = calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[0], self.position.x, self.position.y, self.tir["RL"])
         _, _, mRR = calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[0], self.position.x, self.position.y, self.tir["RR"])
 
-        
+        for j in range(num_right + num_left + 1):
+            xy[0:2, j] = (refline_cl[i, :] + wb_f * tang_vec[i, :]) - (n_pos[j] + 0.5 * width) * normvectors_cl[i, :]
+            xy[2:4, j] = (refline_cl[i, :] + wb_f * tang_vec[i, :]) - (n_pos[j] - 0.5 * width) * normvectors_cl[i, :]
+            xy[4:6, j] = (refline_cl[i, :] - wb_r * tang_vec[i, :]) - (n_pos[j] + 0.5 * width) * normvectors_cl[i, :]
+            xy[6:8, j] = (refline_cl[i, :] - wb_r * tang_vec[i, :]) - (n_pos[j] - 0.5 * width) * normvectors_cl[i, :]
 
         json_string = json.dumps(self.friction_map)  # Convert dictionary to JSON string
         msg = String()
