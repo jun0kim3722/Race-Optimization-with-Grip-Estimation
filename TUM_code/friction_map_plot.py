@@ -119,9 +119,9 @@ if __name__ == '__main__':
     import os.path
 
     module_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    tpamap_path = os.path.join(module_path, 'inputs', 'frictionmaps', 'berlin_2018_tpamap.csv')
-    tpadata_path = os.path.join(module_path, 'inputs', 'frictionmaps', 'berlin_2018_varmue08-12_tpadata.json')
-    referenceline_path = os.path.join(module_path, 'inputs', 'tracks', 'berlin_2018.csv')
+    tpamap_path = os.path.join(module_path, 'ROEG/friction_maps', 'init_frictionmaps', 'berlin_2018_tpamap.csv')
+    tpadata_path = os.path.join(module_path, 'ROEG/friction_maps', 'init_frictionmaps', 'berlin_2018_varmue09-11_tpadata.json')
+    referenceline_path = os.path.join(module_path, 'ROEG/friction_maps', 'tracks', 'berlin_2018.csv')
 
     friction_map_plot(filepath_tpamap=tpamap_path,
                       filepath_tpadata=tpadata_path,

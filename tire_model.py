@@ -392,11 +392,11 @@ def calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs):
 def calculate_friction_coefficients(omega, load, camber, vel_x, vel_y, coeffs):
     Fx, Fy = calculate_friction_force(omega, load, camber, vel_x, vel_y, coeffs)
 
-    mu_x = Fx / load  # Longitudinal friction coefficient
-    mu_y = Fy / load  # Lateral friction coefficient
+    # mu_x = Fx / load  # Longitudinal friction coefficient
+    # mu_y = Fy / load  # Lateral friction coefficient
     mu_t = np.sqrt(Fx**2 + Fy**2) / load  # Total friction coefficient
 
-    return mu_x, mu_y, mu_t
+    return mu_t
 
 
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from raptor_dbw_msgs.msg import WheelSpeedReport
@@ -15,7 +16,7 @@ import configparser
 from TUM_code.friction_map_interface import FrictionMapInterface
 
 class firction_map(Node):
-    def __init__(self, tpamap_file, tpadata_file, tir_file="assets/tir_param_advanced.ini"):
+    def __init__(self, tpamap_file, tpadata_file, tir_file="assets/tir_param_advanced.ini", vehicle_file="assets/vehicle_info.ini"):
         super().__init__('friction_reading_publisher')
         self.publisher_ = self.create_publisher(String, 'topic', 10)
         self.timer = self.create_timer(1.0, self.friction_callback)
@@ -25,14 +26,25 @@ class firction_map(Node):
         parser = configparser.ConfigParser()
         self.tir = {}
         if not parser.read(tir_file):
-            raise ValueError('Specified config file does not exist!')
+            raise ValueError(f'Tire model config file "{tir_file}" does not exist!!')
         else:
-            print("Importing: ", tir_file)
+            print("Importing tire model")
     
         self.tir["FL"] = json.loads(parser.get('GENERAL_OPTIONS', 'FL'))
         self.tir["FR"] = json.loads(parser.get('GENERAL_OPTIONS', 'FR'))
         self.tir["RL"] = json.loads(parser.get('GENERAL_OPTIONS', 'RL'))
         self.tir["RR"] = json.loads(parser.get('GENERAL_OPTIONS', 'RR'))
+
+        self.vehicle_info = {}
+        if not parser.read(vehicle_file):
+            raise ValueError(f'Vehicle info config file "{vehicle_file}" does not exist!!')
+        else:
+            print("Importing Vehicle model")
+
+        vehicle_info = json.loads(parser.get('GENERAL_OPTIONS', 'vehicle_params'))
+        self.wb_f = vehicle_info["wheelbase_front"]
+        self.wb_r = vehicle_info["wheelbase_rear"]
+        self.car_width = vehicle_info["vehicle_width"]
 
         self.odom = self.create_subscription(
             Odometry,
@@ -59,29 +71,40 @@ class firction_map(Node):
             10)
     
     def friction_callback(self):
-        camber = [0, 0, 0, 0]
-        _, _, mFL = calculate_friction_coefficients(self.fl_speed, self.fl_load, camber[0], self.position.x, self.position.y, self.tir["FL"])
-        _, _, mFR = calculate_friction_coefficients(self.fr_speed, self.fr_load, camber[0], self.position.x, self.position.y, self.tir["FR"])
-        _, _, mRL = calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[0], self.position.x, self.position.y, self.tir["RL"])
-        _, _, mRR = calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[0], self.position.x, self.position.y, self.tir["RR"])
+        camber = [0, 0, 0, 0] # temporary untill suspension data is gathered
 
-        for j in range(num_right + num_left + 1):
-            xy[0:2, j] = (refline_cl[i, :] + wb_f * tang_vec[i, :]) - (n_pos[j] + 0.5 * width) * normvectors_cl[i, :]
-            xy[2:4, j] = (refline_cl[i, :] + wb_f * tang_vec[i, :]) - (n_pos[j] - 0.5 * width) * normvectors_cl[i, :]
-            xy[4:6, j] = (refline_cl[i, :] - wb_r * tang_vec[i, :]) - (n_pos[j] + 0.5 * width) * normvectors_cl[i, :]
-            xy[6:8, j] = (refline_cl[i, :] - wb_r * tang_vec[i, :]) - (n_pos[j] - 0.5 * width) * normvectors_cl[i, :]
+        # calc friction coefficients
+        tir_coef = np.array(
+            calculate_friction_coefficients(self.fl_speed, self.fl_load, camber[0], self.position.x, self.position.y, self.tir["FL"]),
+            calculate_friction_coefficients(self.fr_speed, self.fr_load, camber[0], self.position.x, self.position.y, self.tir["FR"]),
+            calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[0], self.position.x, self.position.y, self.tir["RL"]),
+            calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[0], self.position.x, self.position.y, self.tir["RR"])
+        )
 
-        json_string = json.dumps(self.friction_map)  # Convert dictionary to JSON string
+        # calc tire loctions
+        heading_vec = np.array()
+        norm_vec = np.array()
+        tir_pos = np.array(
+            [([self.pos.x, self.pos.y] + self.wb_f * heading_vec) - (0.5 * self.car_width * norm_vec)], # FL
+            [([self.pos.x, self.pos.y] + self.wb_f * heading_vec) + (0.5 * self.car_width * norm_vec)], # FR
+            [([self.pos.x, self.pos.y] - self.wb_r * heading_vec) - (0.5 * self.car_width * norm_vec)], # RL
+            [([self.pos.x, self.pos.y] - self.wb_r * heading_vec) + (0.5 * self.car_width * norm_vec)]  # RR
+        )
+
+        self.map.update_friction_coeff(tir_pos, tir_coef)
+
+        # publish updated friction data
+        json_string = json.dumps(self.map.tpa_data)
         msg = String()
         msg.data = json_string
         self.publisher_.publish(msg)
         self.get_logger().info(f'Friction Map: {json_string}')
     
     def pos_callback(self, msg):
-        self.position = msg.pose.pose.position
-        # self.orientation = msg.pose.pose.orientation
-        self.vel = msg.twist.twist.linear
-        self.get_logger().info(f'Received Odometry: Position(x={self.position.x}, y={self.position.y}, z={self.position.z}), Velocity(x={self.vel.x}, y={self.vel.y}, z={self.vel.z}')
+        self.pos = np.array(msg.pose.pose.position.x, msg.pose.pose.position.y)
+        self.heading = np.array(msg.pose.pose.orientation.w, msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z)
+        self.vel = np.array(msg.twist.twist.linear.x, msg.twist.twist.linear.y, msg.twist.twist.linear.z)
+        self.get_logger().info(f'Received Odometry: Position(x={self.pos[0]}, y={self.pos[1]}), Velocity(x={self.vel[0]}, y={self.vel[1]}, z={self.vel[2]}')
     
     def wheelSpeed_callback(self, msg):
         self.fl_speed = msg.front_left
@@ -129,8 +152,4 @@ def main(args=None):
     rclpy.shutdown()
 
 if __name__ == '__main__':
-    f1 = "friction_maps/init_friction_maps/berlin_2018_tpamap.csv"
-    f2 = "friction_maps/init_friction_maps/berlin_2018_tpadata.json"
-    map = FrictionMapInterface(f1, f2)
-    breakpoint()
     # main()

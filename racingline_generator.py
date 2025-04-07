@@ -6,8 +6,8 @@ from itertools import product
 
 import json
 import configparser
-import warnings
-warnings.simplefilter('ignore', np.RankWarning)
+# import warnings
+# warnings.simplefilter('ignore', np.RankWarning)
 
 # ***************************** Helper Functions *****************************
 def calculate_curvature(waypoints):
@@ -313,7 +313,7 @@ def connect_racing_lines(racing_lines, left_bound, right_bound):
     
     return np.column_stack((final_smooth_x, final_smooth_y))
 
-def racing_line_generator(path2reftrack_file, safety_margin=0.0, viz_corners=False, viz_lines=False):
+def racing_line_generator(path2reftrack_file, safety_margin=0.0, num_lines=3, viz_corners=False, viz_lines=False):
     # load track info
     reftrack = load_reftrack(path2track=path2reftrack_file)
     right_bound, left_bound = calc_trackboundaries(reftrack=reftrack, safety_margin=safety_margin)
@@ -350,19 +350,21 @@ def racing_line_generator(path2reftrack_file, safety_margin=0.0, viz_corners=Fal
                                  right_bound[start_idx:end_idx],
                                  start_point=start_point,
                                  end_point=end_point,
-                                 viz=viz_corners)
+                                 viz=viz_corners,
+                                 num_lines=num_lines)
         lines_per_corner.append(lines)
     
     # combine racing lines
-    print("Number of Corner Generated: ", [len(i) for i in lines_per_corner])
+    max_line = [len(i) for i in lines_per_corner]
+    print("Number of Corner Generated: ", max_line)
 
-    line_comb = list(product(*lines_per_corner))
     complete_lines = []
-    for line in line_comb:
+    for i in range(num_lines):
+        line = [lines_per_corner[c][min(max_line[c]-1, i)] for c in range(num_corners)]
         full_line = connect_racing_lines(line, left_bound, right_bound)
         complete_lines.append(full_line)
 
-    print("Number of Racingline Generated: ", len(line_comb))
+    print("Number of Racingline Generated: ", len(complete_lines))
 
     if viz_lines:
         plt.figure()
@@ -384,4 +386,4 @@ if __name__ == "__main__":
     safety_margin = json.loads(parser.get('GENERAL_OPTIONS','racing_line_params'))['safety_margin']
 
     # Gen Racingline
-    racling_lines = racing_line_generator(path2reftrack_file, safety_margin=safety_margin, viz_lines=True)
+    racling_lines = racing_line_generator(path2reftrack_file, safety_margin=safety_margin, viz_lines=True, viz_corners=False)
