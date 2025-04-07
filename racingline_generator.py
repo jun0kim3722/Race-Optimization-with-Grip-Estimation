@@ -149,6 +149,22 @@ def segment_racing_line(reftrack, curvature_threshold=0.02, size_threshold=5):
     return combined_corners, combined_corners_idxs
 
 def generate_racing_line(reftrack, vec, left_bound, right_bound, start_point, end_point, apex_point):
+    """
+    Generate smooth racing line based on given start point, end point, and apex_point.
+
+    Inputs:
+        reftrack:               reference racing line from turn in to turn out point
+        vec:                    normal vector pointing apex move direction from turn in to turn out point
+        left_bound:             x,y coordinates of left trackboundary (from reference line in driving direction)
+        right_bound:            x,y coordinates of right trackboundary (from reference line in driving direction)
+        start_point:            x,y coordinates of turn in point of the corner
+        end_point:              x,y coordinates of turn out point of the corner
+        apex_point:             x,y coordinates of apex point (maximum turning point) of the corner
+
+    Outputs:
+        smooth_points:          generated racing line formed with 2d points
+    """
+
     for _ in range(10):  # Try multiple iterations to fit the track
         points = np.array([start_point, apex_point, end_point])
         t = np.linspace(0, 1, len(points))
@@ -170,18 +186,34 @@ def generate_racing_line(reftrack, vec, left_bound, right_bound, start_point, en
                 break
         
         if valid:
-            return smooth_points  # Found a valid racing line
+            return smooth_points
         
-        # Adjust apex point slightly
-        apex_point = apex_point + vec * 0.1
+        apex_point = apex_point + vec * 0.1 # Adjust apex point slightly
 
     return None
 
 def turn_collections(reftrack, normvec, left_bound, right_bound, start_point=None, end_point=None, num_lines=3, viz=False):
+    """
+    Generate different start, end, apex points for each corner to create different racing line.
+
+    Inputs:
+        reftrack:               reference racing line in given corner segment
+        normvec:                reference line normal vectors in given corner segment
+        left_bound:             x,y coordinates of left trackboundary (from reference line in driving direction)
+        right_bound:            x,y coordinates of right trackboundary (from reference line in driving direction)
+        start_point:            given turn in point to connect with previous corner racing line
+        end_point:              given turn out point to connect with next corner racing line
+        num_lines:              maximum number of racing line generated per corner
+        viz:                    plots generated racing lines
+
+    Outputs:
+        racing_lines:           collection of racing line of given corner 
+    """
+
     racing_lines = []
     for i in range(num_lines):
-        turn_in_idx = int(len(reftrack) * (0.1 + i * 0.05))  # Vary turn-in points
-        turn_out_idx = int(len(reftrack) * (0.9 - i * 0.05))  # Vary turn-out points
+        turn_in_idx = int(len(reftrack) * (0.1 + i * 0.05))
+        turn_out_idx = int(len(reftrack) * (0.9 - i * 0.05))
 
         # reference track info
         ref_start = reftrack[turn_in_idx][:2]
@@ -263,7 +295,7 @@ def turn_collections(reftrack, normvec, left_bound, right_bound, start_point=Non
     if viz:
         plt.figure()
         for i in range(len(racing_lines)):
-            plt.subplot(1, 3, i+1)
+            plt.subplot(1, num_lines, i+1)
             plt.axis('equal')
             plt.grid()
             plt.plot(left_bound[:,0], left_bound[:,1], color='black')
@@ -278,7 +310,18 @@ def turn_collections(reftrack, normvec, left_bound, right_bound, start_point=Non
     return racing_lines
 
 def connect_racing_lines(racing_lines, left_bound, right_bound):
-    """Connects multiple racing line segments smoothly to form a complete racing line while ensuring validity within track bounds."""
+    """
+    Connect corner racing lines into a complete racing line.
+
+    Inputs:
+        racing_lines:           colection of racing lines generated per corner segments
+        left_bound:             x,y coordinates of left trackboundary (from reference line in driving direction)
+        right_bound:            x,y coordinates of right trackboundary (from reference line in driving direction)
+
+    Outputs:
+        final_line:             complete racing line formed with given racing_lines
+    """
+
     complete_racing_line = []
     for i in range(len(racing_lines)):
         segment1 = racing_lines[i - 1]
@@ -311,9 +354,24 @@ def connect_racing_lines(racing_lines, left_bound, right_bound):
     final_smooth_y = final_spline_y(final_t)
 
     
-    return np.column_stack((final_smooth_x, final_smooth_y))
+    final_line = np.column_stack((final_smooth_x, final_smooth_y))
+    return final_line
 
 def racing_line_generator(path2reftrack_file, safety_margin=0.0, num_lines=3, viz_corners=False, viz_lines=False):
+    """
+    Load track info and generate complete racing line.
+
+    Inputs:
+        path2reftrack_file:     absolute path to reference track file
+        safety_margin:          safetly margin from the track boundaries
+        num_lines:              total number of lines to generate
+        viz_corners:            plots generated racing lines for each corners
+        viz_lines:              plots all of the racing lines generated
+
+    Outputs:
+        complete_lines:         complete racing lines generated
+    """
+
     # load track info
     reftrack = load_reftrack(path2track=path2reftrack_file)
     right_bound, left_bound = calc_trackboundaries(reftrack=reftrack, safety_margin=safety_margin)
@@ -375,6 +433,7 @@ def racing_line_generator(path2reftrack_file, safety_margin=0.0, num_lines=3, vi
             plt.plot(complete_lines[i][:,0], complete_lines[i][:,1])
         plt.show()
 
+    return complete_lines
 
 if __name__ == "__main__":
     # init params
