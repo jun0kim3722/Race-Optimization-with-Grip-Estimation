@@ -2,12 +2,11 @@ from TUM_code.reftrack_functions import load_reftrack, calc_trackboundaries, cal
 import scipy.interpolate
 import numpy as np
 import matplotlib.pyplot as plt
-from itertools import product
 
 import json
 import configparser
-# import warnings
-# warnings.simplefilter('ignore', np.RankWarning)
+import warnings
+warnings.simplefilter('ignore', np.RankWarning)
 
 # ***************************** Helper Functions *****************************
 def calculate_curvature(waypoints):
