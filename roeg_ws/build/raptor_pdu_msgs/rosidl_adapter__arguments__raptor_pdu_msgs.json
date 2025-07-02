@@ -1,0 +1,11 @@
+{
+  "package_name": "raptor_pdu_msgs",
+  "non_idl_tuples": [
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/FuseReport.msg",
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/FuseStatus.msg",
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/RelayCommand.msg",
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/RelayState.msg",
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/RelayReport.msg",
+    "/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs:msg/RelayStatus.msg"
+  ]
+}

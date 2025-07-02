@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_pdu_msgs/msg/RelayCommand.msg
+// generated code does not contain a copyright notice
+
+#include "raptor_pdu_msgs/msg/RelayState.idl"
+#include "std_msgs/msg/Header.idl"
+
+module raptor_pdu_msgs {
+  module msg {
+    struct RelayCommand {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " Relay state enumerations")
+      raptor_pdu_msgs::msg::RelayState relay_1;
+
+      raptor_pdu_msgs::msg::RelayState relay_2;
+
+      raptor_pdu_msgs::msg::RelayState relay_3;
+
+      raptor_pdu_msgs::msg::RelayState relay_4;
+
+      raptor_pdu_msgs::msg::RelayState relay_5;
+
+      raptor_pdu_msgs::msg::RelayState relay_6;
+
+      raptor_pdu_msgs::msg::RelayState relay_7;
+
+      raptor_pdu_msgs::msg::RelayState relay_8;
+    };
+  };
+};

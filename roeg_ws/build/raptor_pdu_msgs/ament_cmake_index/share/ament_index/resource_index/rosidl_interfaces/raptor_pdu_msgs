@@ -1,0 +1,12 @@
+msg/FuseReport.idl
+msg/FuseReport.msg
+msg/FuseStatus.idl
+msg/FuseStatus.msg
+msg/RelayCommand.idl
+msg/RelayCommand.msg
+msg/RelayReport.idl
+msg/RelayReport.msg
+msg/RelayState.idl
+msg/RelayState.msg
+msg/RelayStatus.idl
+msg/RelayStatus.msg

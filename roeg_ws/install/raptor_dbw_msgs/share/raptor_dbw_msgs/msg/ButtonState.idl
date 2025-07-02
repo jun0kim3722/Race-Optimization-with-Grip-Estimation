@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_dbw_msgs/msg/ButtonState.msg
+// generated code does not contain a copyright notice
+
+
+module raptor_dbw_msgs {
+  module msg {
+    module ButtonState_Constants {
+      const uint8 NOT_PRESSED = 0;
+      const uint8 PRESSED = 1;
+      const uint8 SNA = 3;
+    };
+    struct ButtonState {
+      uint8 value;
+    };
+  };
+};

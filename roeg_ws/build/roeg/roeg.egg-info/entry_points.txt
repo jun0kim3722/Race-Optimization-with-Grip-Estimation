@@ -1,0 +1,3 @@
+[console_scripts]
+get_friction_map = roeg.friction_reading:main
+

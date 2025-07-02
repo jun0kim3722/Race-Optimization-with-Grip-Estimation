@@ -1,0 +1,6 @@
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/FuseReport.idl
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/FuseStatus.idl
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/RelayCommand.idl
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/RelayState.idl
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/RelayReport.idl
+/ROEG/roeg_ws/build/raptor_pdu_msgs/rosidl_adapter/raptor_pdu_msgs:msg/RelayStatus.idl

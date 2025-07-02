@@ -1,0 +1,63 @@
+[0.715s] Invoking command in '/ROEG/roeg_ws/src/roeg': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/can_dbc_parser LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/build/roeg/prefix_override:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/roeg build --build-base /ROEG/roeg_ws/build/roeg/build install --record /ROEG/roeg_ws/build/roeg/install.log --single-version-externally-managed
+[0.911s] running egg_info
+[0.912s] creating ../../build/roeg/roeg.egg-info
+[0.912s] writing ../../build/roeg/roeg.egg-info/PKG-INFO
+[0.912s] writing dependency_links to ../../build/roeg/roeg.egg-info/dependency_links.txt
+[0.912s] writing entry points to ../../build/roeg/roeg.egg-info/entry_points.txt
+[0.913s] writing requirements to ../../build/roeg/roeg.egg-info/requires.txt
+[0.913s] writing top-level names to ../../build/roeg/roeg.egg-info/top_level.txt
+[0.914s] writing manifest file '../../build/roeg/roeg.egg-info/SOURCES.txt'
+[0.947s] reading manifest file '../../build/roeg/roeg.egg-info/SOURCES.txt'
+[0.947s] writing manifest file '../../build/roeg/roeg.egg-info/SOURCES.txt'
+[0.947s] running build
+[0.948s] running build_py
+[0.948s] creating /ROEG/roeg_ws/build/roeg/build
+[0.948s] creating /ROEG/roeg_ws/build/roeg/build/lib
+[0.948s] creating /ROEG/roeg_ws/build/roeg/build/lib/roeg
+[0.948s] copying roeg/racingline_generator.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg
+[0.948s] copying roeg/__init__.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg
+[0.948s] copying roeg/friction_reading.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg
+[0.948s] copying roeg/tire_model.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg
+[0.948s] creating /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.948s] copying roeg/TUM_code/friction_map_plot.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.949s] copying roeg/TUM_code/friction_map_interface.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.949s] copying roeg/TUM_code/plot_frictionmap_data.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.949s] copying roeg/TUM_code/__init__.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.949s] copying roeg/TUM_code/reftrack_functions.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.949s] copying roeg/TUM_code/main_gen_frictionmap.py -> /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code
+[0.950s] running install
+[0.952s] running install_lib
+[0.953s] creating /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/racingline_generator.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/__init__.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/friction_reading.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/tire_model.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg
+[0.954s] creating /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/friction_map_plot.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/friction_map_interface.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/plot_frictionmap_data.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.954s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/__init__.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.955s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/reftrack_functions.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.955s] copying /ROEG/roeg_ws/build/roeg/build/lib/roeg/TUM_code/main_gen_frictionmap.py -> /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code
+[0.955s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/racingline_generator.py to racingline_generator.cpython-38.pyc
+[0.962s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/__init__.py to __init__.cpython-38.pyc
+[0.962s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/friction_reading.py to friction_reading.cpython-38.pyc
+[0.964s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/tire_model.py to tire_model.cpython-38.pyc
+[0.967s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/friction_map_plot.py to friction_map_plot.cpython-38.pyc
+[0.968s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/friction_map_interface.py to friction_map_interface.cpython-38.pyc
+[0.969s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/plot_frictionmap_data.py to plot_frictionmap_data.cpython-38.pyc
+[0.970s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/__init__.py to __init__.cpython-38.pyc
+[0.970s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/reftrack_functions.py to reftrack_functions.cpython-38.pyc
+[0.970s] byte-compiling /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg/TUM_code/main_gen_frictionmap.py to main_gen_frictionmap.cpython-38.pyc
+[0.971s] running install_data
+[0.972s] creating /ROEG/roeg_ws/install/roeg/share/ament_index
+[0.972s] creating /ROEG/roeg_ws/install/roeg/share/ament_index/resource_index
+[0.972s] creating /ROEG/roeg_ws/install/roeg/share/ament_index/resource_index/packages
+[0.972s] copying resource/roeg -> /ROEG/roeg_ws/install/roeg/share/ament_index/resource_index/packages
+[0.972s] copying package.xml -> /ROEG/roeg_ws/install/roeg/share/roeg
+[0.972s] running install_egg_info
+[0.974s] Copying ../../build/roeg/roeg.egg-info to /ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages/roeg-0.0.0-py3.8.egg-info
+[0.975s] running install_scripts
+[0.997s] Installing get_friction_map script to /ROEG/roeg_ws/install/roeg/lib/roeg
+[0.998s] writing list of installed files to '/ROEG/roeg_ws/build/roeg/install.log'
+[1.087s] Invoked command in '/ROEG/roeg_ws/src/roeg' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/can_dbc_parser LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/build/roeg/prefix_override:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/roeg build --build-base /ROEG/roeg_ws/build/roeg/build install --record /ROEG/roeg_ws/build/roeg/install.log --single-version-externally-managed

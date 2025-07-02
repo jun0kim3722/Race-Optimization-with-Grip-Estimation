@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_pdu_msgs/msg/RelayReport.msg
+// generated code does not contain a copyright notice
+
+#include "raptor_pdu_msgs/msg/RelayStatus.idl"
+#include "std_msgs/msg/Header.idl"
+
+module raptor_pdu_msgs {
+  module msg {
+    struct RelayReport {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " Fuse status enumeration")
+      uint8 grid_address;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_1;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_2;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_3;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_4;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_5;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_6;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_7;
+
+      raptor_pdu_msgs::msg::RelayStatus relay_8;
+    };
+  };
+};

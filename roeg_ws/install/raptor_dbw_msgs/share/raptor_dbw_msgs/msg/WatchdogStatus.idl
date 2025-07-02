@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_dbw_msgs/msg/WatchdogStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module raptor_dbw_msgs {
+  module msg {
+    module WatchdogStatus_Constants {
+      const uint8 NONE = 0;
+      const uint8 OTHER_BRAKE = 1;
+      const uint8 OTHER_ACCELERATOR_PEDAL = 2;
+      const uint8 OTHER_STEERING = 3;
+      const uint8 BRAKE_COUNTER = 4;
+      const uint8 BRAKE_DISABLED = 5;
+      const uint8 BRAKE_COMMAND = 6;
+      const uint8 BRAKE_REPORT = 7;
+      const uint8 ACCELERATOR_PEDAL_COUNTER = 8;
+      const uint8 ACCELERATOR_PEDAL_DISABLED = 9;
+      const uint8 ACCELERATOR_PEDAL_COMMAND = 10;
+      const uint8 ACCELERATOR_PEDAL_REPORT = 11;
+      const uint8 STEERING_COUNTER = 12;
+      const uint8 STEERING_DISABLED = 13;
+      const uint8 STEERING_COMMAND = 14;
+      const uint8 STEERING_REPORT = 15;
+    };
+    struct WatchdogStatus {
+      std_msgs::msg::Header header;
+
+      uint8 source;
+    };
+  };
+};

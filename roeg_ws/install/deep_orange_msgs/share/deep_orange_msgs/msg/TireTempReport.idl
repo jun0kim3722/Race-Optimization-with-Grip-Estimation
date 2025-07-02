@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from deep_orange_msgs/msg/TireTempReport.msg
+// generated code does not contain a copyright notice
+
+#include "deep_orange_msgs/msg/TireTemp.idl"
+#include "std_msgs/msg/Header.idl"
+
+module deep_orange_msgs {
+  module msg {
+    struct TireTempReport {
+      std_msgs::msg::Header header;
+
+      deep_orange_msgs::msg::TireTemp front_left;
+
+      deep_orange_msgs::msg::TireTemp front_right;
+
+      deep_orange_msgs::msg::TireTemp rear_left;
+
+      deep_orange_msgs::msg::TireTemp rear_right;
+    };
+  };
+};

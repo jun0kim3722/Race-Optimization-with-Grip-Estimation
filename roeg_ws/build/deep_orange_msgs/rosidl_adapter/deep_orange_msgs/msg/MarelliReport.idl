@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from deep_orange_msgs/msg/MarelliReport.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module deep_orange_msgs {
+  module msg {
+    struct MarelliReport {
+      builtin_interfaces::msg::Time stamp;
+
+      float lat;
+
+      float lon;
+
+      int8 lte_modem_lte_rssi;
+
+      boolean lte_sync_ok;
+    };
+  };
+};

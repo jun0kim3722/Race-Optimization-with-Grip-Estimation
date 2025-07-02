@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_pdu_msgs/msg/RelayStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module raptor_pdu_msgs {
+  module msg {
+    module RelayStatus_Constants {
+      const uint8 OK = 0;
+      const uint8 RELAY_COIL_OPEN = 1;
+      const uint8 RELAY_COIL_SHORTED = 2;
+      const uint8 NORM_OPEN_RELAY_OPEN = 3;
+      const uint8 NORM_CLOSED_RELAY_OPEN = 4;
+      const uint8 COIL_NOT_POWERED = 5;
+      const uint8 NORM_OPEN_RELAY_SHORTED = 6;
+      const uint8 NORM_CLOSED_RELAY_SHORTED = 7;
+      const uint8 RESERVED_01 = 8;
+      const uint8 RESERVED_02 = 9;
+      const uint8 RESERVED_03 = 10;
+      const uint8 HIGH_SIDE_FAULT = 11;
+      const uint8 HIGH_SIDE_OPEN_LOAD = 12;
+      const uint8 HIGH_SIDE_OVER_VOLTAGE = 13;
+      const uint8 RESERVED_04 = 14;
+      const uint8 RELAY_LOCATION_NOT_USED = 15;
+    };
+    struct RelayStatus {
+      std_msgs::msg::Header header;
+
+      uint8 value;
+    };
+  };
+};

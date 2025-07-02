@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from deep_orange_msgs/msg/DiagnosticReport.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module deep_orange_msgs {
+  module msg {
+    struct DiagnosticReport {
+      builtin_interfaces::msg::Time stamp;
+
+      boolean sd_system_warning;
+
+      boolean sd_system_failure;
+
+      int32 motec_warning;
+
+      boolean sd_brake_warning1;
+
+      boolean sd_brake_warning2;
+
+      boolean sd_brake_warning3;
+
+      boolean sd_steer_warning1;
+
+      boolean sd_steer_warning2;
+
+      boolean sd_steer_warning3;
+
+      boolean est1_oos_front_brk;
+
+      boolean est2_oos_rear_brk;
+
+      boolean est3_low_eng_speed;
+
+      boolean est4_sd_comms_loss;
+
+      boolean est5_motec_comms_loss;
+
+      boolean est6_sd_ebrake;
+
+      boolean adlink_hb_lost;
+
+      boolean rc_lost;
+    };
+  };
+};

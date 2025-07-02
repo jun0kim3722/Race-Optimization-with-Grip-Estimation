@@ -1,0 +1,40 @@
+running egg_info
+creating build/roeg/roeg.egg-info
+writing build/roeg/roeg.egg-info/PKG-INFO
+writing dependency_links to build/roeg/roeg.egg-info/dependency_links.txt
+writing entry points to build/roeg/roeg.egg-info/entry_points.txt
+writing requirements to build/roeg/roeg.egg-info/requires.txt
+writing top-level names to build/roeg/roeg.egg-info/top_level.txt
+writing manifest file 'build/roeg/roeg.egg-info/SOURCES.txt'
+reading manifest file 'build/roeg/roeg.egg-info/SOURCES.txt'
+writing manifest file 'build/roeg/roeg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /ROEG/roeg_ws/src/roeg/build/roeg/build
+creating /ROEG/roeg_ws/src/roeg/build/roeg/build/lib
+creating /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg
+copying roeg/racingline_generator.py -> /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg
+copying roeg/__init__.py -> /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg
+copying roeg/friction_reading.py -> /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg
+copying roeg/tire_model.py -> /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg
+running install
+running install_lib
+creating /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg
+copying /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg/racingline_generator.py -> /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg
+copying /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg/__init__.py -> /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg
+copying /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg/friction_reading.py -> /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg
+copying /ROEG/roeg_ws/src/roeg/build/roeg/build/lib/roeg/tire_model.py -> /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg
+byte-compiling /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg/racingline_generator.py to racingline_generator.cpython-38.pyc
+byte-compiling /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg/__init__.py to __init__.cpython-38.pyc
+byte-compiling /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg/friction_reading.py to friction_reading.cpython-38.pyc
+byte-compiling /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg/tire_model.py to tire_model.cpython-38.pyc
+running install_data
+creating /ROEG/roeg_ws/src/roeg/install/roeg/share/ament_index
+creating /ROEG/roeg_ws/src/roeg/install/roeg/share/ament_index/resource_index
+creating /ROEG/roeg_ws/src/roeg/install/roeg/share/ament_index/resource_index/packages
+copying resource/roeg -> /ROEG/roeg_ws/src/roeg/install/roeg/share/ament_index/resource_index/packages
+copying package.xml -> /ROEG/roeg_ws/src/roeg/install/roeg/share/roeg
+running install_egg_info
+Copying build/roeg/roeg.egg-info to /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/ROEG/roeg_ws/src/roeg/build/roeg/install.log'

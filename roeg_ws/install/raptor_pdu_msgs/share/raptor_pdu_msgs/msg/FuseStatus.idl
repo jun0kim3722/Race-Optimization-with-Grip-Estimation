@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_pdu_msgs/msg/FuseStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module raptor_pdu_msgs {
+  module msg {
+    module FuseStatus_Constants {
+      const uint8 NO_FAULT = 0;
+      const uint8 BLOWN = 1;
+      const uint8 NOT_POWERED = 2;
+      const uint8 NOT_USED = 3;
+    };
+    struct FuseStatus {
+      std_msgs::msg::Header header;
+
+      uint8 value;
+    };
+  };
+};

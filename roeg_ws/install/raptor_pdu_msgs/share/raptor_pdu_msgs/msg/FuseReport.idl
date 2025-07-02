@@ -1,0 +1,50 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_pdu_msgs/msg/FuseReport.msg
+// generated code does not contain a copyright notice
+
+#include "raptor_pdu_msgs/msg/FuseStatus.idl"
+#include "std_msgs/msg/Header.idl"
+
+module raptor_pdu_msgs {
+  module msg {
+    struct FuseReport {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " Fuse status enumeration")
+      uint8 grid_address;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_1;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_2;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_3;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_4;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_5;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_6;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_7;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_8;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_9;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_10;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_11;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_12;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_13;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_14;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_15;
+
+      raptor_pdu_msgs::msg::FuseStatus fuse_16;
+    };
+  };
+};

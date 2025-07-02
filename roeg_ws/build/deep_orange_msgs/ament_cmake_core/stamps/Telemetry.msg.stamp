@@ -1,0 +1,37 @@
+builtin_interfaces/Time stamp
+
+# misc report
+float32 battery_voltage
+bool off_grid_power_connection
+uint8 safety_switch_state
+bool mode_switch_state
+uint8 sys_state
+
+# CT report
+uint8 track_cond_ack
+uint8 veh_sig_ack
+uint8 ct_state
+
+# PT report
+float32 map_sensor
+float32 lambda_sensor
+float32 fuel_level
+float32 fuel_pressure
+float32 engine_oil_pressure
+float32 engine_oil_temperature
+float32 engine_coolant_temperature
+float32 engine_coolant_pressure
+float32 engine_rpm
+bool engine_on_status
+bool engine_run_switch_status
+float32 throttle_position
+int8 current_gear
+int8 gear_shift_status
+float32 transmission_oil_pressure
+float32 transmission_accumulator_pressure
+float32 transmission_oil_temperature
+float32 vehicle_speed_kmph
+
+# controller
+float64 look_ahead_error
+float64 lateral_error

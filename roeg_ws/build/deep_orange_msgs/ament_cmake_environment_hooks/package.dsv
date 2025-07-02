@@ -1,0 +1,4 @@
+source;share/deep_orange_msgs/local_setup.bash
+source;share/deep_orange_msgs/local_setup.dsv
+source;share/deep_orange_msgs/local_setup.sh
+source;share/deep_orange_msgs/local_setup.zsh

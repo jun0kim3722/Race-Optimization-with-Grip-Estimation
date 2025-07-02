@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from raptor_dbw_msgs/msg/FaultActionsReport.msg
+// generated code does not contain a copyright notice
+
+#include "raptor_dbw_msgs/msg/ButtonState.idl"
+#include "std_msgs/msg/Header.idl"
+
+module raptor_dbw_msgs {
+  module msg {
+    struct FaultActionsReport {
+      std_msgs::msg::Header header;
+
+      boolean autonomous_disabled_no_brakes;
+
+      boolean autonomous_disabled_apply_brakes;
+
+      boolean can_gateway_disabled;
+
+      boolean inverter_contactor_disabled;
+
+      boolean prevent_enter_autonomous_mode;
+
+      boolean warn_driver_only;
+
+      boolean chime_fcw_beeps;
+
+      uint16 last_active_fault_idx;
+
+      boolean estop_btn_pressed;
+
+      raptor_dbw_msgs::msg::ButtonState remote_estop_btn_pressed;
+    };
+  };
+};

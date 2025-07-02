@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(deep_orange_msgs_IDL_FILES "msg/BaseToCarSummary.idl;msg/BrakeTempReport.idl;msg/Coordinates.idl;msg/CtReport.idl;msg/MiscReport.idl;msg/PtReport.idl;msg/RcToCt.idl;msg/TireReport.idl;msg/TireTemp.idl;msg/TireTempReport.idl;msg/Telemetry.idl;msg/JoystickCommand.idl;msg/DiagnosticReport.idl;msg/LapTimeReport.idl;msg/MyLapsReport.idl;msg/MarelliReport.idl;msg/RaceControlReport.idl")
+set(deep_orange_msgs_INTERFACE_FILES "msg/BaseToCarSummary.msg;msg/BrakeTempReport.msg;msg/Coordinates.msg;msg/CtReport.msg;msg/MiscReport.msg;msg/PtReport.msg;msg/RcToCt.msg;msg/TireReport.msg;msg/TireTemp.msg;msg/TireTempReport.msg;msg/Telemetry.msg;msg/JoystickCommand.msg;msg/DiagnosticReport.msg;msg/LapTimeReport.msg;msg/MyLapsReport.msg;msg/MarelliReport.msg;msg/RaceControlReport.msg")

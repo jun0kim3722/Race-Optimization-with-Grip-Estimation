@@ -1,0 +1,22 @@
+[0.495s] Invoking command in '/ROEG/roeg_ws/src/roeg': PYTHONPATH=/ROEG/roeg_ws/src/roeg/build/roeg/prefix_override:/ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/roeg build --build-base /ROEG/roeg_ws/src/roeg/build/roeg/build install --record /ROEG/roeg_ws/src/roeg/build/roeg/install.log --single-version-externally-managed
+[0.679s] running egg_info
+[0.680s] writing build/roeg/roeg.egg-info/PKG-INFO
+[0.680s] writing dependency_links to build/roeg/roeg.egg-info/dependency_links.txt
+[0.680s] writing entry points to build/roeg/roeg.egg-info/entry_points.txt
+[0.680s] writing requirements to build/roeg/roeg.egg-info/requires.txt
+[0.680s] writing top-level names to build/roeg/roeg.egg-info/top_level.txt
+[0.704s] reading manifest file 'build/roeg/roeg.egg-info/SOURCES.txt'
+[0.705s] writing manifest file 'build/roeg/roeg.egg-info/SOURCES.txt'
+[0.705s] running build
+[0.705s] running build_py
+[0.706s] running install
+[0.706s] running install_lib
+[0.708s] running install_data
+[0.708s] copying package.xml -> /ROEG/roeg_ws/src/roeg/install/roeg/share/roeg
+[0.708s] running install_egg_info
+[0.710s] removing '/ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.710s] Copying build/roeg/roeg.egg-info to /ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages/roeg-0.0.0-py3.8.egg-info
+[0.711s] running install_scripts
+[0.727s] Installing get_friction_map script to /ROEG/roeg_ws/src/roeg/install/roeg/lib/roeg
+[0.727s] writing list of installed files to '/ROEG/roeg_ws/src/roeg/build/roeg/install.log'
+[0.744s] Invoked command in '/ROEG/roeg_ws/src/roeg' returned '0': PYTHONPATH=/ROEG/roeg_ws/src/roeg/build/roeg/prefix_override:/ROEG/roeg_ws/src/roeg/install/roeg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/roeg build --build-base /ROEG/roeg_ws/src/roeg/build/roeg/build install --record /ROEG/roeg_ws/src/roeg/build/roeg/install.log --single-version-externally-managed

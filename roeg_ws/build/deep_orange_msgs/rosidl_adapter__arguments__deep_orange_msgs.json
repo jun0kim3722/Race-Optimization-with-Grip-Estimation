@@ -1,0 +1,22 @@
+{
+  "package_name": "deep_orange_msgs",
+  "non_idl_tuples": [
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/BaseToCarSummary.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/BrakeTempReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/Coordinates.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/CtReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/MiscReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/PtReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/RcToCt.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/TireReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/TireTemp.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/TireTempReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/Telemetry.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/JoystickCommand.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/DiagnosticReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/LapTimeReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/MyLapsReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/MarelliReport.msg",
+    "/ROEG/roeg_ws/src/deep_orange_msgs:msg/RaceControlReport.msg"
+  ]
+}
