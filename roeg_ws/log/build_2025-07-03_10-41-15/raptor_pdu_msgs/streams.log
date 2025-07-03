@@ -1,0 +1,346 @@
+[0.050s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu_msgs
+[0.157s] -- The C compiler identification is GNU 9.4.0
+[0.258s] -- The CXX compiler identification is GNU 9.4.0
+[0.263s] -- Check for working C compiler: /usr/bin/cc
+[0.385s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.386s] -- Detecting C compiler ABI info
+[0.506s] -- Detecting C compiler ABI info - done
+[0.517s] -- Detecting C compile features
+[0.517s] -- Detecting C compile features - done
+[0.520s] -- Check for working CXX compiler: /usr/bin/c++
+[0.656s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.657s] -- Detecting CXX compiler ABI info
+[0.798s] -- Detecting CXX compiler ABI info - done
+[0.809s] -- Detecting CXX compile features
+[0.809s] -- Detecting CXX compile features - done
+[0.813s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.846s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.846s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.971s] -- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+[1.004s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.011s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.165s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.215s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.317s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.362s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[1.404s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.588s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[1.778s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.833s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.854s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.856s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[1.885s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.886s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.886s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.886s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.908s] -- Found PythonExtra: .so  
+[2.110s] -- Using numpy include directory: /usr/local/lib/python3.8/dist-packages/numpy/core/include
+[2.134s] -- Configuring done
+[2.211s] -- Generating done
+[2.215s] -- Build files have been written to: /ROEG/roeg_ws/build/raptor_pdu_msgs
+[2.238s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu_msgs
+[2.239s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu_msgs -- -j16 -l16
+[2.300s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.300s] [35m[1mScanning dependencies of target raptor_pdu_msgs__cpp[0m
+[2.317s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.834s] [  2%] Built target raptor_pdu_msgs__cpp
+[2.846s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.847s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.847s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.948s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_generator_c[0m
+[2.970s] [ 11%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/fuse_report__functions.c.o[0m
+[2.970s] [ 11%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/relay_command__functions.c.o[0m
+[2.970s] [ 11%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/fuse_status__functions.c.o[0m
+[2.970s] [ 12%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/relay_state__functions.c.o[0m
+[2.972s] [ 14%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/relay_status__functions.c.o[0m
+[2.982s] [ 15%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_pdu_msgs/msg/detail/relay_report__functions.c.o[0m
+[3.058s] [ 16%] [32m[1mLinking C shared library libraptor_pdu_msgs__rosidl_generator_c.so[0m
+[3.115s] [ 16%] Built target raptor_pdu_msgs__rosidl_generator_c
+[3.128s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.128s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.413s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_introspection_cpp[0m
+[3.443s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/fuse_report__type_support.cpp.o[0m
+[3.443s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/relay_report__type_support.cpp.o[0m
+[3.443s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/relay_command__type_support.cpp.o[0m
+[3.443s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/fuse_status__type_support.cpp.o[0m
+[3.443s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/relay_state__type_support.cpp.o[0m
+[3.443s] [ 28%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_pdu_msgs/msg/detail/relay_status__type_support.cpp.o[0m
+[3.445s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[3.477s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/fuse_report__type_support.cpp.o[0m
+[3.480s] [ 30%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/fuse_status__type_support.cpp.o[0m
+[3.502s] [ 32%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/relay_command__type_support.cpp.o[0m
+[3.512s] [ 33%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/relay_state__type_support.cpp.o[0m
+[3.543s] [ 35%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/relay_report__type_support.cpp.o[0m
+[3.571s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_pdu_msgs/msg/detail/dds_fastrtps/relay_status__type_support.cpp.o[0m
+[3.653s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_cpp[0m
+[3.741s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/fuse_report__type_support.cpp.o[0m
+[3.760s] [ 39%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/fuse_status__type_support.cpp.o[0m
+[3.821s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_c[0m
+[3.933s] [ 40%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/fuse_report__type_support.cpp.o[0m
+[3.935s] [ 42%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/relay_command__type_support.cpp.o[0m
+[3.960s] [ 43%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/fuse_status__type_support.cpp.o[0m
+[3.991s] [ 45%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/relay_command__type_support.cpp.o[0m
+[4.014s] [ 46%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/relay_report__type_support.cpp.o[0m
+[4.018s] [ 47%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/relay_state__type_support.cpp.o[0m
+[4.045s] [ 49%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/relay_state__type_support.cpp.o[0m
+[4.058s] [ 50%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_pdu_msgs/msg/relay_status__type_support.cpp.o[0m
+[4.063s] [ 52%] [32m[1mLinking CXX shared library libraptor_pdu_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.099s] [ 53%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/relay_report__type_support.cpp.o[0m
+[4.127s] [ 54%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_pdu_msgs/msg/relay_status__type_support.cpp.o[0m
+[4.169s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_introspection_c[0m
+[4.201s] [ 56%] [32m[1mLinking CXX shared library libraptor_pdu_msgs__rosidl_typesupport_c.so[0m
+[4.249s] [ 57%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/fuse_status__type_support.c.o[0m
+[4.253s] [ 59%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/fuse_report__type_support.c.o[0m
+[4.274s] [ 60%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/relay_command__type_support.c.o[0m
+[4.296s] [ 61%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/relay_state__type_support.c.o[0m
+[4.359s] [ 63%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/relay_report__type_support.c.o[0m
+[4.372s] [ 64%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_pdu_msgs/msg/detail/relay_status__type_support.c.o[0m
+[4.386s] [ 64%] Built target raptor_pdu_msgs__rosidl_typesupport_c
+[4.405s] [ 64%] Built target raptor_pdu_msgs__rosidl_typesupport_introspection_cpp
+[4.463s] [ 66%] [32m[1mLinking C shared library libraptor_pdu_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.547s] [ 66%] Built target raptor_pdu_msgs__rosidl_typesupport_introspection_c
+[4.549s] [ 67%] [32m[1mLinking CXX shared library libraptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.695s] [ 69%] [32m[1mLinking CXX shared library libraptor_pdu_msgs__rosidl_typesupport_cpp.so[0m
+[4.787s] [ 69%] Built target raptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp
+[4.787s] [ 69%] Built target raptor_pdu_msgs__rosidl_typesupport_cpp
+[4.806s] [ 70%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.273s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_fastrtps_c[0m
+[5.309s] [ 76%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/relay_command__type_support_c.cpp.o[0m
+[5.309s] [ 76%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/relay_status__type_support_c.cpp.o[0m
+[5.310s] [ 76%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/relay_report__type_support_c.cpp.o[0m
+[5.310s] [ 78%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/fuse_report__type_support_c.cpp.o[0m
+[5.310s] [ 78%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/relay_state__type_support_c.cpp.o[0m
+[5.310s] [ 78%] [32mBuilding CXX object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_pdu_msgs/msg/detail/fuse_status__type_support_c.cpp.o[0m
+[6.184s] [ 80%] [32m[1mLinking CXX shared library libraptor_pdu_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.623s] [ 80%] Built target raptor_pdu_msgs__rosidl_typesupport_fastrtps_c
+[6.696s] [35m[1mScanning dependencies of target raptor_pdu_msgs[0m
+[6.761s] [ 80%] Built target raptor_pdu_msgs
+[6.846s] [35m[1mScanning dependencies of target raptor_pdu_msgs__py[0m
+[6.908s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.119s] [ 81%] Built target raptor_pdu_msgs__py
+[9.140s] [35m[1mScanning dependencies of target raptor_pdu_msgs__python[0m
+[9.178s] [ 84%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_fuse_report_s.c.o[0m
+[9.178s] [ 84%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_fuse_status_s.c.o[0m
+[9.178s] [ 85%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_relay_command_s.c.o[0m
+[9.178s] [ 87%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_relay_report_s.c.o[0m
+[9.179s] [ 88%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_relay_state_s.c.o[0m
+[9.179s] [ 90%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__python.dir/rosidl_generator_py/raptor_pdu_msgs/msg/_relay_status_s.c.o[0m
+[9.434s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/raptor_pdu_msgs/libraptor_pdu_msgs__python.so[0m
+[9.523s] [ 91%] Built target raptor_pdu_msgs__python
+[9.563s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[9.565s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_c__pyext[0m
+[9.572s] [35m[1mScanning dependencies of target raptor_pdu_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[9.606s] [ 92%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/raptor_pdu_msgs/_raptor_pdu_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.624s] [ 94%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/raptor_pdu_msgs/_raptor_pdu_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.626s] [ 95%] [32mBuilding C object CMakeFiles/raptor_pdu_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/raptor_pdu_msgs/_raptor_pdu_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[9.746s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[9.751s] [ 98%] [32m[1mLinking CXX shared library rosidl_generator_py/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[9.754s] [100%] [32m[1mLinking C shared library rosidl_generator_py/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[9.789s] [100%] Built target raptor_pdu_msgs__rosidl_typesupport_introspection_c__pyext
+[9.801s] [100%] Built target raptor_pdu_msgs__rosidl_typesupport_c__pyext
+[9.840s] [100%] Built target raptor_pdu_msgs__rosidl_typesupport_fastrtps_c__pyext
+[9.855s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu_msgs -- -j16 -l16
+[10.010s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu_msgs
+[10.025s] -- Install configuration: ""
+[10.025s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/ament_index/resource_index/rosidl_interfaces/raptor_pdu_msgs
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_state.h
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_status.h
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/fuse_status.h
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.026s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_command.h
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_report.h
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__functions.c
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__struct.h
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__struct.h
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__functions.c
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__type_support.h
+[10.027s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__functions.c
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__functions.c
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__type_support.h
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__functions.h
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__type_support.h
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__functions.h
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__functions.h
+[10.028s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__functions.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__type_support.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__type_support.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__functions.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__struct.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__functions.h
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__functions.c
+[10.029s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__struct.h
+[10.030s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__type_support.h
+[10.030s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__struct.h
+[10.030s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__functions.c
+[10.030s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__struct.h
+[10.030s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/fuse_report.h
+[10.031s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/library_path.sh
+[10.031s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/library_path.dsv
+[10.031s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_generator_c.so
+[10.032s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_generator_c.so" to ""
+[10.032s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.032s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.032s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.032s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__rosidl_typesupport_fastrtps_c.h
+[10.032s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__rosidl_typesupport_fastrtps_c.h
+[10.032s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__rosidl_typesupport_fastrtps_c.h
+[10.032s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__rosidl_typesupport_fastrtps_c.h
+[10.032s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__rosidl_typesupport_fastrtps_c.h
+[10.033s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__rosidl_typesupport_fastrtps_c.h
+[10.033s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.033s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_fastrtps_c.so
+[10.033s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.034s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.034s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.034s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__rosidl_typesupport_fastrtps_cpp.hpp
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__rosidl_typesupport_fastrtps_cpp.hpp
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__rosidl_typesupport_fastrtps_cpp.hpp
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__rosidl_typesupport_fastrtps_cpp.hpp
+[10.034s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__rosidl_typesupport_fastrtps_cpp.hpp
+[10.035s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/dds_fastrtps
+[10.035s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__rosidl_typesupport_fastrtps_cpp.hpp
+[10.035s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.036s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.036s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.036s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.036s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.036s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.036s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__rosidl_typesupport_introspection_c.h
+[10.036s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__rosidl_typesupport_introspection_c.h
+[10.036s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__type_support.c
+[10.037s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__rosidl_typesupport_introspection_c.h
+[10.037s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__rosidl_typesupport_introspection_c.h
+[10.037s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__rosidl_typesupport_introspection_c.h
+[10.037s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__type_support.c
+[10.037s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__type_support.c
+[10.038s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__rosidl_typesupport_introspection_c.h
+[10.038s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__type_support.c
+[10.038s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__type_support.c
+[10.038s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__type_support.c
+[10.038s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_introspection_c.so
+[10.039s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.039s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_c.so
+[10.039s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_c.so" to ""
+[10.039s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.040s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_status.hpp
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_report.hpp
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/fuse_status.hpp
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_command.hpp
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/relay_state.hpp
+[10.040s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__traits.hpp
+[10.040s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__struct.hpp
+[10.041s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__struct.hpp
+[10.041s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__builder.hpp
+[10.041s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__traits.hpp
+[10.041s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__struct.hpp
+[10.041s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__struct.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__struct.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__builder.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__traits.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__builder.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__builder.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__traits.hpp
+[10.042s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__builder.hpp
+[10.043s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__builder.hpp
+[10.043s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__traits.hpp
+[10.043s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__traits.hpp
+[10.043s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__struct.hpp
+[10.043s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/fuse_report.hpp
+[10.043s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs
+[10.044s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg
+[10.044s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__type_support.cpp
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__type_support.cpp
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__rosidl_typesupport_introspection_cpp.hpp
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__type_support.cpp
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__rosidl_typesupport_introspection_cpp.hpp
+[10.044s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_status__rosidl_typesupport_introspection_cpp.hpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_report__rosidl_typesupport_introspection_cpp.hpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__type_support.cpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_status__type_support.cpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_command__rosidl_typesupport_introspection_cpp.hpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/relay_state__rosidl_typesupport_introspection_cpp.hpp
+[10.045s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/include/raptor_pdu_msgs/msg/detail/fuse_report__type_support.cpp
+[10.046s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_introspection_cpp.so
+[10.046s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.046s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_cpp.so
+[10.047s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__rosidl_typesupport_cpp.so" to ""
+[10.047s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/pythonpath.sh
+[10.047s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/pythonpath.dsv
+[10.047s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/__init__.py
+[10.076s] Compiling '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/__init__.py'...
+[10.080s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg
+[10.080s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_status.py
+[10.080s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_status_s.c
+[10.080s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_fuse_status.py
+[10.080s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_report_s.c
+[10.081s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_fuse_report.py
+[10.081s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_fuse_status_s.c
+[10.081s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_state_s.c
+[10.081s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/__init__.py
+[10.081s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_command.py
+[10.082s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_fuse_report_s.c
+[10.082s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_command_s.c
+[10.082s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_report.py
+[10.082s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/msg/_relay_state.py
+[10.083s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[10.083s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[10.084s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[10.084s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[10.085s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[10.085s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages/raptor_pdu_msgs/raptor_pdu_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[10.085s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__python.so
+[10.086s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/libraptor_pdu_msgs__python.so" to ""
+[10.086s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/FuseReport.idl
+[10.086s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/FuseStatus.idl
+[10.087s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayCommand.idl
+[10.087s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayState.idl
+[10.087s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayReport.idl
+[10.087s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayStatus.idl
+[10.088s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/FuseReport.msg
+[10.088s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/FuseStatus.msg
+[10.088s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayCommand.msg
+[10.088s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayState.msg
+[10.088s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayReport.msg
+[10.089s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/msg/RelayStatus.msg
+[10.089s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/ament_index/resource_index/package_run_dependencies/raptor_pdu_msgs
+[10.089s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/ament_index/resource_index/parent_prefix_path/raptor_pdu_msgs
+[10.090s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/ament_prefix_path.sh
+[10.090s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/ament_prefix_path.dsv
+[10.090s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/path.sh
+[10.090s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/environment/path.dsv
+[10.091s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/local_setup.bash
+[10.091s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/local_setup.sh
+[10.091s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/local_setup.zsh
+[10.091s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/local_setup.dsv
+[10.091s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.dsv
+[10.092s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/ament_index/resource_index/packages/raptor_pdu_msgs
+[10.092s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_generator_cExport.cmake
+[10.092s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.093s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.093s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.093s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_cExport.cmake
+[10.093s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.094s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_generator_cppExport.cmake
+[10.094s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.094s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.095s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_cppExport.cmake
+[10.095s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.095s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/rosidl_cmake-extras.cmake
+[10.095s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.095s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.096s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.096s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.096s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.096s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.097s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgsConfig.cmake
+[10.097s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/cmake/raptor_pdu_msgsConfig-version.cmake
+[10.097s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.xml
+[10.103s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu_msgs

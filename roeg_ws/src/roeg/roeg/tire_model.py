@@ -398,6 +398,10 @@ def calculate_friction_coefficients(omega, load, camber, vel_x, vel_y, coeffs):
 
     return mu_t
 
+# *********************************** Geometry model ************************************************
+# def calculate_camber_toe(load, camber):
+
+
 
 if __name__ == '__main__':
     """

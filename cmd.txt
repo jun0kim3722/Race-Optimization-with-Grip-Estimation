@@ -18,3 +18,4 @@ ros2 run roeg get_friction_map <track name>
 
 # run multi-terminal
 docker exec -it <name or #id> bash
+source install/setup.bash

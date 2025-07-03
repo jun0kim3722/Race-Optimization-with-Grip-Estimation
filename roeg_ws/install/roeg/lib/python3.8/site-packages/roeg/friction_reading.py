@@ -7,10 +7,12 @@ from nav_msgs.msg import Odometry
 from std_msgs.msg import String
 import numpy as np
 from scipy.spatial.transform import Rotation as R
+import matplotlib.pyplot as plt
+import math
 import json
 import sys
 
-from .tire_model import calculate_friction_coefficients, calculate_friction_force
+from .tire_model import calculate_friction_coefficients
 import configparser
 
 # import TUM friction map codes
@@ -22,8 +24,8 @@ class Firction_map(Node):
                  vehicle_file="/ROEG/roeg_ws/src/roeg/roeg/assets/vehicle_info.ini"):
         
         super().__init__('friction_reading_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        self.timer = self.create_timer(1.0, self.friction_callback)
+        self.publisher_ = self.create_publisher(String, 'friction_data', 10)
+        self.timer = self.create_timer(3.0, self.publish_data)
 
         self.fl_speed = 0.0
         self.fr_speed = 0.0
@@ -93,7 +95,16 @@ class Firction_map(Node):
             self.suspensionTravel_callback,
             10)
     
-    def friction_callback(self):
+    def publish_data(self):
+        # publish updated friction data
+        list_dict = {key: coeff.tolist() for key, coeff in self.map.tpa_data.items()}
+        json_string = json.dumps(list_dict)
+        msg = String()
+        msg.data = json_string
+        self.publisher_.publish(msg)
+        self.get_logger().info(f'Friction Map Updated!!!!')
+
+    def get_friction_data(self):
         camber = [0, 0, 0, 0] # temporary untill suspension data is gathered
 
         # calc friction coefficients
@@ -109,30 +120,21 @@ class Firction_map(Node):
             return
 
         # calc tire loctions
-        vec = self.heading.apply([0, 0, 1])
-        heading_vec = np.array([vec[0], vec[2]])
-        norm_vec = np.array([-vec[2], vec[0]])
+        vec = self.heading.apply([1, 0, 0])
+        heading_vec = np.array([vec[0], vec[1]])
+        norm_vec = np.array([vec[1], -vec[0]])
         tir_pos = np.array([
             ([self.pos[0], self.pos[1]] + self.wb_f * heading_vec) - (0.5 * self.car_width * norm_vec), # FL
             ([self.pos[0], self.pos[1]] + self.wb_f * heading_vec) + (0.5 * self.car_width * norm_vec), # FR
             ([self.pos[0], self.pos[1]] - self.wb_r * heading_vec) - (0.5 * self.car_width * norm_vec), # RL
             ([self.pos[0], self.pos[1]] - self.wb_r * heading_vec) + (0.5 * self.car_width * norm_vec)  # RR
         ])
-        breakpoint()
 
         self.map.update_friction_coeff(tir_pos, tir_coef)
-
-        # publish updated friction data
-        json_string = json.dumps(self.map.tpa_data)
-        msg = String()
-        msg.data = json_string
-        self.publisher_.publish(msg)
-        self.get_logger().info(f'Friction Map: {json_string}')
     
     def pos_callback(self, msg):
         self.pos = np.array([msg.pose.pose.position.x, msg.pose.pose.position.y])
         self.heading = R.from_quat([msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w])
-        # self.heading = np.array([msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w])
         
         self.vel = np.array([msg.twist.twist.linear.x, msg.twist.twist.linear.y, msg.twist.twist.linear.z])
         self.get_logger().info(f'Received Odometry: Position(x={self.pos[0]}, y={self.pos[1]}), Velocity(x={self.vel[0]}, y={self.vel[1]}, z={self.vel[2]}')
@@ -158,18 +160,95 @@ class Firction_map(Node):
         self.rr_travel = msg.rr_damper_linear_potentiometer
         self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
 
-# def read_files():
 
+def friction_map_plot(map):
+    # ------------------------------------------------------------------------------------------------------------------
+    # LOAD DATA FROM FILES ---------------------------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------------------------------------------
+
+    print('INFO: Loading friction map data...')
+
+    # load reference line from csv-file
+    ref_file = "/ROEG/roeg_ws/src/roeg/roeg/friction_maps/tracks/IMS.csv"
+    with open(ref_file, 'r') as fh:
+        reftrack = np.genfromtxt(fh, delimiter=',')
+
+    tpamap_loaded = map.tpa_map
+    tpadata_loaded = map.tpa_data
+
+    print('INFO: Friction map data loaded successfully!')
+
+    # ------------------------------------------------------------------------------------------------------------------
+    # PREPARE DATA FOR PLOTTING ----------------------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------------------------------------------
+
+    print('INFO: Preprocessing friction map data for visualization... (takes some time)')
+
+    # read values from dict
+    list_coord = tpamap_loaded.data[tpamap_loaded.indices]
+
+    list_mue = []
+
+    for idx in tpamap_loaded.indices:
+        list_mue.append(tpadata_loaded[idx])
+
+    # recalculate stepsize of friction map
+    x_stepsize = abs(list_coord[1, 0] - list_coord[0, 0])
+    y_stepsize = abs(list_coord[1, 1] - list_coord[0, 1])
+
+    # load coordinate values from friction map
+    tree_points = tpamap_loaded.data
+
+    # determine min/max of coordinate values in both directions to set up 2d array for countourf plotting
+    x_min = math.floor(np.amin(tree_points[:, 0]))
+    x_max = math.ceil(np.amax(tree_points[:, 0]))
+
+    y_min = math.floor(np.amin(tree_points[:, 1]))
+    y_max = math.ceil(np.amax(tree_points[:, 1]))
+
+    x_vals = np.arange(x_min - (20.0 * x_stepsize), x_max + (19.0 * x_stepsize), x_stepsize)
+    y_vals = np.arange(y_min - (20.0 * y_stepsize), y_max + (19.0 * y_stepsize), y_stepsize)
+
+    # set up an empty 2d array which is then filled wiich corresponding mue values
+    z = np.full((y_vals.shape[0], x_vals.shape[0]), fill_value=np.nan)
+
+    # plot 2D array
+    for row, mue in zip(list_coord, list_mue):
+        index_column = int((row[0] - min(x_vals)) / x_stepsize)
+        index_row = int((-row[1] + max(y_vals)) / y_stepsize)
+
+        z[index_row, index_column] = mue
+
+    # ------------------------------------------------------------------------------------------------------------------
+    # CREATE PLOT ------------------------------------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------------------------------------------
+
+    print('INFO: Plotting friction map data...')
+
+    plt.figure()
+
+    # set axis limits
+    plt.xlim(min(reftrack[:, 0]) - 100.0, max(reftrack[:, 0]) + 100.0)
+    plt.ylim(min(reftrack[:, 1]) - 100.0, max(reftrack[:, 1]) + 100.0)
+
+    # plot 2D contour representing the friction data (mue-values)
+    plt.contourf(x_vals, np.flipud(y_vals), z)
+
+    # set up plot
+    plt.colorbar(label='mue-values')
+    plt.title('mue-values of the racetrack')
+    plt.xlabel("east in m")
+    plt.ylabel("north in m")
+    plt.axis('equal')
+
+    plt.show()
 
 def main(args=None):
     """
     Updates friction map coefficient based on vehicle data and tire model calculation
 
     Args:
-        tpa_map:    csv-file containing the map information (x,y-coordinates of each grid cell
-                    '*_tpamap.csv' located in inputs folder)
-        tpa_data:   json-file containing specific data for each grid cell (e.g. coefficient of friction)
-                    '*_tpadata.json' located in inputs folder)
+        track_name:     Name of the track (list is given under friction_maps/tracks/track_list.txt)
     """
     
     if len(sys.argv) < 2:
@@ -184,7 +263,6 @@ def main(args=None):
         print("\nOther usage: ros2 run roeg get_friction_map <track name>")
         track_id = int(input("Select track #: "))
         track_name = track_dict[track_id]
-        breakpoint()
     else:
         track_name = sys.argv[1]
     
@@ -193,11 +271,29 @@ def main(args=None):
     tpadata_file = "/ROEG/roeg_ws/src/roeg/roeg/friction_maps/tpadata/" + track_name + "_tpadata.json"
 
     rclpy.init(args=args)
-    friction_map = Firction_map(tpamap_file, tpadata_file)
-    rclpy.spin(friction_map)
+    node = Firction_map(tpamap_file, tpadata_file)
+    executor = rclpy.executors.SingleThreadedExecutor()
+    executor.add_node(node)
 
-    friction_map.destroy_node()
-    rclpy.shutdown()
+    try:
+        while rclpy.ok():
+            node.get_friction_data() # Call friction_callback directly as fast as possible
+            executor.spin_once(timeout_sec=0.001)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+
+
+    # rclpy.init(args=args)
+    # friction_map = Firction_map(tpamap_file, tpadata_file)
+    # rclpy.spin(friction_map)
+
+    # friction_map.destroy_node()
+    # rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

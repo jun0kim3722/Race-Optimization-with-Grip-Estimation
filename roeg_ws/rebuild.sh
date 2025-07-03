@@ -5,3 +5,4 @@ rm -rf install build log
 # rosdep update
 rosdep install -i --from-path src --rosdistro galactic -y
 colcon build
+source install/setup.bash
