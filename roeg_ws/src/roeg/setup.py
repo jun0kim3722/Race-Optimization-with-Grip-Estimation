@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'get_friction_map = roeg.friction_reading:main'
+            'friction_reading = roeg.friction_reading:main'
         ],
     },
 )

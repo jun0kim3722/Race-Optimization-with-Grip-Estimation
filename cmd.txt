@@ -12,9 +12,9 @@ docker build -t ros2-roeg .
 
 # run program
 source install/setup.bash
-ros2 run roeg get_friction_map
+ros2 run roeg friction_reading
 or
-ros2 run roeg get_friction_map <track name>
+ros2 run roeg friction_reading <track name>
 
 # run multi-terminal
 docker exec -it <name or #id> bash

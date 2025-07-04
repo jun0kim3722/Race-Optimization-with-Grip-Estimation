@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import math
 import json
 import sys
+import os
+from datetime import datetime
 
 from .tire_model import calculate_friction_coefficients
 import configparser
@@ -103,21 +105,24 @@ class Firction_map(Node):
         msg.data = json_string
         self.publisher_.publish(msg)
         self.get_logger().info(f'Friction Map Updated!!!!')
+        # friction_map_plot(self.map)
 
     def get_friction_data(self):
-        camber = [0, 0, 0, 0] # temporary untill suspension data is gathered
+        camber = [0.08, 0.08, 0.06, 0.06] # temporary untill suspension data is gathered
 
         # calc friction coefficients
         tir_coef = np.array([
-            calculate_friction_coefficients(self.fl_speed, self.fl_load, camber[0], self.pos[0], self.pos[1], self.tir["FL"]),
-            calculate_friction_coefficients(self.fr_speed, self.fr_load, camber[1], self.pos[0], self.pos[1], self.tir["FR"]),
-            calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[2], self.pos[0], self.pos[1], self.tir["RL"]),
-            calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[3], self.pos[0], self.pos[1], self.tir["RR"])
+            calculate_friction_coefficients(self.fl_speed, self.fl_load, camber[0], self.vel[0], self.vel[1], self.tir["FL"]),
+            calculate_friction_coefficients(self.fr_speed, self.fr_load, camber[1], self.vel[0], self.vel[1], self.tir["FR"]),
+            calculate_friction_coefficients(self.rl_speed, self.rl_load, camber[2], self.vel[0], self.vel[1], self.tir["RL"]),
+            calculate_friction_coefficients(self.rr_speed, self.rr_load, camber[3], self.vel[0], self.vel[1], self.tir["RR"])
         ])
 
         if np.isnan(tir_coef).any():
             self.get_logger().warning('Calculated friction coefficient is NaN', skip_first=True)
             return
+        else:
+            self.get_logger().info(f'tir_coef: {tir_coef}', skip_first=False)
 
         # calc tire loctions
         vec = self.heading.apply([1, 0, 0])
@@ -137,29 +142,28 @@ class Firction_map(Node):
         self.heading = R.from_quat([msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w])
         
         self.vel = np.array([msg.twist.twist.linear.x, msg.twist.twist.linear.y, msg.twist.twist.linear.z])
-        self.get_logger().info(f'Received Odometry: Position(x={self.pos[0]}, y={self.pos[1]}), Velocity(x={self.vel[0]}, y={self.vel[1]}, z={self.vel[2]}')
+        # self.get_logger().info(f'Received Odometry: Position(x={self.pos[0]}, y={self.pos[1]}), Velocity(x={self.vel[0]}, y={self.vel[1]}, z={self.vel[2]}')
     
     def wheelSpeed_callback(self, msg):
         self.fl_speed = msg.front_left
         self.fr_speed = msg.front_right
         self.rl_speed = msg.rear_left
         self.rr_speed = msg.rear_right
-        self.get_logger().info(f'Received Wheel Speed: front_left={self.fl_speed}, front_right={self.fr_speed}, rear_left={self.rl_speed}, rear_right={self.rr_speed}')
+        # self.get_logger().info(f'Received Wheel Speed: front_left={self.fl_speed}, front_right={self.fr_speed}, rear_left={self.rl_speed}, rear_right={self.rr_speed}')
     
     def tireLoad_callback(self, msg):
         self.fl_load = msg.fl_wheel_load
         self.fr_load = msg.fr_wheel_load
         self.rl_load = msg.rl_wheel_load
         self.rr_load = msg.rr_wheel_load
-        self.get_logger().info(f'Received Wheel Load: front_left={self.fl_load}, front_right={self.fr_load}, rear_left={self.rl_load}, rear_right={self.rr_load}')
+        # self.get_logger().info(f'Received Wheel Load: front_left={self.fl_load}, front_right={self.fr_load}, rear_left={self.rl_load}, rear_right={self.rr_load}')
 
     def suspensionTravel_callback(self, msg):
         self.fl_travel = msg.fl_damper_linear_potentiometer
         self.fr_travel = msg.fr_damper_linear_potentiometer
         self.rl_travel = msg.rl_damper_linear_potentiometer
         self.rr_travel = msg.rr_damper_linear_potentiometer
-        self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
-
+        # self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
 
 def friction_map_plot(map):
     # ------------------------------------------------------------------------------------------------------------------
@@ -243,6 +247,19 @@ def friction_map_plot(map):
 
     plt.show()
 
+def save_map(tpa_data, track_name):
+    tpa_data_string = {str(k): v.tolist() for k, v in tpa_data.items()}
+
+    now = datetime.now()
+    file_name = "/" + track_name + "_tpadata_" + now.strftime("%m%d%y_%H%M") + ".json"
+    folder_path = os.path.join("/ROEG/roeg_ws/src/roeg/roeg/friction_maps/results/", track_name)
+    os.makedirs(folder_path, exist_ok=True)
+
+    with open(folder_path + file_name, 'w') as fh:
+        json.dump(tpa_data_string, fh, separators=(',', ': '))
+
+    print(f"****** Friction Map Saved: {file_name} ******")
+
 def main(args=None):
     """
     Updates friction map coefficient based on vehicle data and tire model calculation
@@ -260,7 +277,7 @@ def main(args=None):
                 print("{}:".format(i), line.strip())
                 track_dict[i] = line[:-1]
 
-        print("\nOther usage: ros2 run roeg get_friction_map <track name>")
+        print("\nOther usage: ros2 run roeg friction_reading <track name>")
         track_id = int(input("Select track #: "))
         track_name = track_dict[track_id]
     else:
@@ -271,29 +288,22 @@ def main(args=None):
     tpadata_file = "/ROEG/roeg_ws/src/roeg/roeg/friction_maps/tpadata/" + track_name + "_tpadata.json"
 
     rclpy.init(args=args)
-    node = Firction_map(tpamap_file, tpadata_file)
+    fm = Firction_map(tpamap_file, tpadata_file)
     executor = rclpy.executors.SingleThreadedExecutor()
-    executor.add_node(node)
+    executor.add_node(fm)
 
     try:
         while rclpy.ok():
-            node.get_friction_data() # Call friction_callback directly as fast as possible
+            fm.get_friction_data() # Call friction_callback directly as fast as possible
             executor.spin_once(timeout_sec=0.001)
     except KeyboardInterrupt:
         pass
     finally:
-        node.destroy_node()
+        save_map(fm.map.tpa_data, track_name)
+        friction_map_plot(fm.map)
+        fm.destroy_node()
         rclpy.shutdown()
 
-
-
-
-    # rclpy.init(args=args)
-    # friction_map = Firction_map(tpamap_file, tpadata_file)
-    # rclpy.spin(friction_map)
-
-    # friction_map.destroy_node()
-    # rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
