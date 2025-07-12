@@ -18,15 +18,18 @@ Adapting to new environments is a critical challenge in autonomous driving, as t
 ### Docker Setup
 > If you do not have Docker on your device, please install from the [Docker Website](https://docs.docker.com/engine/install/)
 
-Build Image:
+Build Docker Image:
 ```
 docker build -t ros2-roeg .
 ```
 
-Run Docker Image:
+Run Docker Container:
 ```
 ./run_roeg_docker.sh
 ```
+
+### Download Assests
+
 
 ### Run ROS Programs In Docker
 To Run Friction Map Framework:
