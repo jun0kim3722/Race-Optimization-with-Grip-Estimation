@@ -55,7 +55,7 @@ class Firction_map(Node):
         if not parser.read(tir_file):
             raise ValueError(f'Tire model config file "{tir_file}" does not exist!!')
         else:
-            print("Importing tire model")
+            self.get_logger().info("Importing tire model", skip_first=False)
     
         self.tir["FL"] = json.loads(parser.get('GENERAL_OPTIONS', 'FL'))
         self.tir["FR"] = json.loads(parser.get('GENERAL_OPTIONS', 'FR'))
@@ -66,7 +66,7 @@ class Firction_map(Node):
         if not parser.read(vehicle_file):
             raise ValueError(f'Vehicle info config file "{vehicle_file}" does not exist!!')
         else:
-            print("Importing vehicle model")
+            self.get_logger().info("Importing vehicle model", skip_first=False)
 
         vehicle_info = json.loads(parser.get('GENERAL_OPTIONS', 'vehicle_params'))
         self.wb_f = vehicle_info["wheelbase_front"]
@@ -166,11 +166,12 @@ class Firction_map(Node):
         # self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
 
 def friction_map_plot(map):
-    # ------------------------------------------------------------------------------------------------------------------
-    # LOAD DATA FROM FILES ---------------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
+    """
+    Visualize friction map
 
-    print('INFO: Loading friction map data...')
+    Args:
+        map:    <FrictionMapInterface> class
+    """
 
     # load reference line from csv-file
     ref_file = "/ROEG/roeg_ws/src/roeg/roeg/friction_maps/tracks/IMS.csv"
@@ -180,19 +181,9 @@ def friction_map_plot(map):
     tpamap_loaded = map.tpa_map
     tpadata_loaded = map.tpa_data
 
-    print('INFO: Friction map data loaded successfully!')
-
-    # ------------------------------------------------------------------------------------------------------------------
-    # PREPARE DATA FOR PLOTTING ----------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
-
-    print('INFO: Preprocessing friction map data for visualization... (takes some time)')
-
     # read values from dict
     list_coord = tpamap_loaded.data[tpamap_loaded.indices]
-
     list_mue = []
-
     for idx in tpamap_loaded.indices:
         list_mue.append(tpadata_loaded[idx])
 
@@ -223,14 +214,7 @@ def friction_map_plot(map):
 
         z[index_row, index_column] = mue
 
-    # ------------------------------------------------------------------------------------------------------------------
-    # CREATE PLOT ------------------------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
-
-    print('INFO: Plotting friction map data...')
-
     plt.figure()
-
     # set axis limits
     plt.xlim(min(reftrack[:, 0]) - 100.0, max(reftrack[:, 0]) + 100.0)
     plt.ylim(min(reftrack[:, 1]) - 100.0, max(reftrack[:, 1]) + 100.0)
@@ -244,10 +228,17 @@ def friction_map_plot(map):
     plt.xlabel("east in m")
     plt.ylabel("north in m")
     plt.axis('equal')
-
     plt.show()
 
 def save_map(tpa_data, track_name):
+    """
+    Save frication coefficients into json file.
+
+    Args:
+        tpa_data  :     Dictionary containing coefficient data for each grid cell
+        track_name:     Name of the track (list is given under friction_maps/tracks/track_list.txt)
+    """
+
     tpa_data_string = {str(k): v.tolist() for k, v in tpa_data.items()}
 
     now = datetime.now()
@@ -294,7 +285,7 @@ def main(args=None):
 
     try:
         while rclpy.ok():
-            fm.get_friction_data() # Call friction_callback directly as fast as possible
+            fm.get_friction_data()
             executor.spin_once(timeout_sec=0.001)
     except KeyboardInterrupt:
         pass
