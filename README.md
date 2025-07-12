@@ -28,9 +28,6 @@ Run Docker Container:
 ./run_roeg_docker.sh
 ```
 
-### Download Assests
-
-
 ### Run ROS Programs In Docker
 To Run Friction Map Framework:
 ```
@@ -63,14 +60,24 @@ To run rosbag from previous event:
 cd /ROEG/roeg_ws/src/roeg/roeg
 ./run_rosbag.sh
 ```
+> Download the rosbag from [here](https://drive.google.com/drive/folders/10GNZyyOYT4gA7wkYwOiH5h6wgzUU5jFs?usp=drive_link),
+> and place it in: `/ROEG/roeg_ws/src/roeg/roeg/assets/rosbag`
 
 
 ## To Do List
-- [ ] Add suspension model inside of the `Friction Map Framework`
-- [ ] Improve `Exploration Line Generation`
-- [ ] Add publisher for the racing line planning
-- [ ] MAIN: `Racing Line Optimization`
+- [x] Build simple magic tire model
+- [x] Analyze suspension geometry
+- [x] Implement and test *Exploration Line Generation*
+- [x] Set up Docker environment
+- [x] Implement and test *Friction Map Framework*
+- [ ] Integrate suspension model into the Friction Map Framework
+- [ ] Refine *Exploration Line Generation* — explore better approaches
+- [ ] Add publisher for racing line planning
+- [ ] **MAIN**: *Racing Line Optimization*
 
-### Author:
-*Junyoung Kim @ Purdue University ECE*
+## Authors:
+***Junyoung Kim @ Purdue University ECE***
+- Email: kim3722@purdue.edu
+- LinkedIn: [Junyoung (Jun) Kim](https://www.linkedin.com/in/jun0kim0329/)
+  
 
