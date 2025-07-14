@@ -20,6 +20,7 @@ Adapting to new environments is a critical challenge in autonomous driving, as t
 
 Build Docker Image:
 ```
+git clone --recurse-submodules https://github.com/jun0kim3722/Race-Optimization-with-Grip-Estimation.git
 docker build -t ros2-roeg .
 ```
 
