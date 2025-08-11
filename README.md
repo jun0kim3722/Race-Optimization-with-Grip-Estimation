@@ -71,7 +71,7 @@ cd /ROEG/roeg_ws/src/roeg/roeg
 - [x] Implement and test *Exploration Line Generation*
 - [x] Set up Docker environment
 - [x] Implement and test *Friction Map Framework*
-- [ ] Integrate suspension model into the Friction Map Framework
+- [x] Integrate suspension model into the Friction Map Framework
 - [ ] Refine *Exploration Line Generation* — explore better approaches
 - [ ] Add publisher for racing line planning
 - [ ] **MAIN**: *Racing Line Optimization*
