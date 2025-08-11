@@ -20,6 +20,7 @@ Adapting to new environments is a critical challenge in autonomous driving, as t
 
 Build Docker Image:
 ```
+git clone --recurse-submodules https://github.com/jun0kim3722/Race-Optimization-with-Grip-Estimation.git
 docker build -t ros2-roeg .
 ```
 
@@ -79,5 +80,15 @@ cd /ROEG/roeg_ws/src/roeg/roeg
 ***Junyoung Kim @ Purdue University ECE***
 - Email: kim3722@purdue.edu
 - LinkedIn: [Junyoung (Jun) Kim](https://www.linkedin.com/in/jun0kim0329/)
+<br>
+
+***Christian Choi @ Purdue University FYE***
+- Email: choi953@purdue.edu
+- LinkedIn: [Christian Choi](https://www.linkedin.com/in/christian-choi-456a332b9/?external_page=LPC.Immersive&external_control=ViewProfileLink&external_app_instance=13fe13b6-86b5-40e4-9dbf-e88fdf119ee1&external_page_instance=e6868a05-7089-4586-80ec-e8e3ce12e0ed&experiment=displayLinkedInDataPrebind)
+<br>
+
+***Aroldo Lugo Quintanilla @ Purdue University AE***
+- Email: alugoqui@purdue.edu
+- LinkedIn: [Aroldo Lugo Quintanilla](https://www.linkedin.com/in/aroldolugoq/?external_page=LPC.Immersive&external_control=ViewProfileLink&external_app_instance=13fe13b6-86b5-40e4-9dbf-e88fdf119ee1&external_page_instance=85f5d4d5-b45b-476a-baba-1c001d1f84d4&experiment=displayLinkedInDataPrebind)
   
 
