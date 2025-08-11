@@ -1,0 +1,81 @@
+[0.068s] Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/can_dbc_parser
+[0.237s] -- The C compiler identification is GNU 9.4.0
+[0.347s] -- The CXX compiler identification is GNU 9.4.0
+[0.352s] -- Check for working C compiler: /usr/bin/cc
+[0.426s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.427s] -- Detecting C compiler ABI info
+[0.497s] -- Detecting C compiler ABI info - done
+[0.504s] -- Detecting C compile features
+[0.505s] -- Detecting C compile features - done
+[0.507s] -- Check for working CXX compiler: /usr/bin/c++
+[0.585s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.586s] -- Detecting CXX compiler ABI info
+[0.662s] -- Detecting CXX compiler ABI info - done
+[0.671s] -- Detecting CXX compile features
+[0.671s] -- Detecting CXX compile features - done
+[0.675s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.706s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.706s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.875s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.974s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.007s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.083s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.150s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.177s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.179s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.179s] -- Configured cppcheck include dirs: /ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser/include
+[1.179s] -- Configured cppcheck exclude dirs and/or files: 
+[1.180s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.181s] -- Configured cpplint exclude dirs and/or files: 
+[1.182s] -- Added test 'lint_cmake' to check CMake code style
+[1.184s] -- Added test 'uncrustify' to check C / C++ code style
+[1.184s] -- Configured uncrustify additional arguments: 
+[1.185s] -- Added test 'xmllint' to check XML markup files
+[1.192s] -- Configuring done
+[1.198s] -- Generating done
+[1.200s] -- Build files have been written to: /ROEG/roeg_ws/build/can_dbc_parser
+[1.206s] Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/can_dbc_parser
+[1.210s] Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/can_dbc_parser -- -j16 -l16
+[1.254s] [35m[1mScanning dependencies of target can_dbc_parser[0m
+[1.275s] [ 50%] [32mBuilding CXX object CMakeFiles/can_dbc_parser.dir/src/DbcSignal.cpp.o[0m
+[1.275s] [ 50%] [32mBuilding CXX object CMakeFiles/can_dbc_parser.dir/src/LineParser.cpp.o[0m
+[1.275s] [ 50%] [32mBuilding CXX object CMakeFiles/can_dbc_parser.dir/src/DbcMessage.cpp.o[0m
+[1.276s] [ 66%] [32mBuilding CXX object CMakeFiles/can_dbc_parser.dir/src/Dbc.cpp.o[0m
+[1.277s] [ 83%] [32mBuilding CXX object CMakeFiles/can_dbc_parser.dir/src/DbcBuilder.cpp.o[0m
+[2.035s] [100%] [32m[1mLinking CXX shared library libcan_dbc_parser.so[0m
+[2.168s] [100%] Built target can_dbc_parser
+[2.194s] Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/can_dbc_parser -- -j16 -l16
+[2.251s] Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/can_dbc_parser
+[2.261s] -- Install configuration: ""
+[2.261s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include
+[2.261s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser
+[2.261s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/DbcMessage.hpp
+[2.261s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/Dbc.hpp
+[2.261s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/LineParser.hpp
+[2.262s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/DbcUtilities.hpp
+[2.262s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/DbcBuilder.hpp
+[2.262s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/include/can_dbc_parser/DbcSignal.hpp
+[2.262s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/library_path.sh
+[2.263s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/library_path.dsv
+[2.263s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/lib/libcan_dbc_parser.so
+[2.264s] -- Set runtime path of "/ROEG/roeg_ws/install/can_dbc_parser/lib/libcan_dbc_parser.so" to ""
+[2.264s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/ament_index/resource_index/package_run_dependencies/can_dbc_parser
+[2.264s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/ament_index/resource_index/parent_prefix_path/can_dbc_parser
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/ament_prefix_path.sh
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/ament_prefix_path.dsv
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/path.sh
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/environment/path.dsv
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/local_setup.bash
+[2.265s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/local_setup.sh
+[2.266s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/local_setup.zsh
+[2.266s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/local_setup.dsv
+[2.266s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.dsv
+[2.266s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/ament_index/resource_index/packages/can_dbc_parser
+[2.266s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.267s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.267s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/cmake/ament_cmake_export_libraries-extras.cmake
+[2.267s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/cmake/can_dbc_parserConfig.cmake
+[2.267s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/cmake/can_dbc_parserConfig-version.cmake
+[2.267s] -- Installing: /ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.xml
+[2.270s] Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/can_dbc_parser

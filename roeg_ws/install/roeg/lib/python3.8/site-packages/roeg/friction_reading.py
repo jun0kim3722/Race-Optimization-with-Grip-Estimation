@@ -55,7 +55,7 @@ class Firction_map(Node):
         if not parser.read(tir_file):
             raise ValueError(f'Tire model config file "{tir_file}" does not exist!!')
         else:
-            print("Importing tire model")
+            self.get_logger().info("Importing tire model", skip_first=False)
     
         self.tir["FL"] = json.loads(parser.get('GENERAL_OPTIONS', 'FL'))
         self.tir["FR"] = json.loads(parser.get('GENERAL_OPTIONS', 'FR'))
@@ -66,12 +66,16 @@ class Firction_map(Node):
         if not parser.read(vehicle_file):
             raise ValueError(f'Vehicle info config file "{vehicle_file}" does not exist!!')
         else:
-            print("Importing vehicle model")
+            self.get_logger().info("Importing vehicle model", skip_first=False)
 
         vehicle_info = json.loads(parser.get('GENERAL_OPTIONS', 'vehicle_params'))
         self.wb_f = vehicle_info["wheelbase_front"]
         self.wb_r = vehicle_info["wheelbase_rear"]
         self.car_width = vehicle_info["vehicle_width"]
+        self.init_cambers = vehicle_info["init_cambers"]
+        self.norm_load = vehicle_info["normial_load"]
+        self.camber_f = vehicle_info["camber_front"]
+        self.camber_r = vehicle_info["camber_rear"]
 
         self.odom = self.create_subscription(
             Odometry,
@@ -108,7 +112,14 @@ class Firction_map(Node):
         # friction_map_plot(self.map)
 
     def get_friction_data(self):
-        camber = [0.08, 0.08, 0.06, 0.06] # temporary untill suspension data is gathered
+        # Estimate camber angles
+        breakpoint()
+        camber = [
+            self.init_cambers[0] + self.camber_f[0] * (self.fl_load - self.norm_load)**2 + self.camber_f[1] * (self.fl_load - self.norm_load) + self.camber_f[2],
+            self.init_cambers[1] + self.camber_f[0] * (self.fr_load - self.norm_load)**2 + self.camber_f[1] * (self.fr_load - self.norm_load) + self.camber_f[2],
+            self.init_cambers[2] + self.camber_r[0] * (self.rl_load - self.norm_load)**2 + self.camber_r[1] * (self.rl_load - self.norm_load) + self.camber_r[2],
+            self.init_cambers[3] + self.camber_r[0] * (self.rr_load - self.norm_load)**2 + self.camber_r[1] * (self.rr_load - self.norm_load) + self.camber_r[2],
+        ]
 
         # calc friction coefficients
         tir_coef = np.array([
@@ -165,12 +176,19 @@ class Firction_map(Node):
         self.rr_travel = msg.rr_damper_linear_potentiometer
         # self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
 
-def friction_map_plot(map):
-    # ------------------------------------------------------------------------------------------------------------------
-    # LOAD DATA FROM FILES ---------------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
+def get_front_camber(load):
+    return 0.0702 * load**2 - 1.21*load - 0.771
 
-    print('INFO: Loading friction map data...')
+def get_rear_camber(load):
+    return 0.0854 * load**2 - 1.32*load - 0.843
+
+def friction_map_plot(map):
+    """
+    Visualize friction map
+
+    Args:
+        map:    <FrictionMapInterface> class
+    """
 
     # load reference line from csv-file
     ref_file = "/ROEG/roeg_ws/src/roeg/roeg/friction_maps/tracks/IMS.csv"
@@ -180,19 +198,9 @@ def friction_map_plot(map):
     tpamap_loaded = map.tpa_map
     tpadata_loaded = map.tpa_data
 
-    print('INFO: Friction map data loaded successfully!')
-
-    # ------------------------------------------------------------------------------------------------------------------
-    # PREPARE DATA FOR PLOTTING ----------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
-
-    print('INFO: Preprocessing friction map data for visualization... (takes some time)')
-
     # read values from dict
     list_coord = tpamap_loaded.data[tpamap_loaded.indices]
-
     list_mue = []
-
     for idx in tpamap_loaded.indices:
         list_mue.append(tpadata_loaded[idx])
 
@@ -223,14 +231,7 @@ def friction_map_plot(map):
 
         z[index_row, index_column] = mue
 
-    # ------------------------------------------------------------------------------------------------------------------
-    # CREATE PLOT ------------------------------------------------------------------------------------------------------
-    # ------------------------------------------------------------------------------------------------------------------
-
-    print('INFO: Plotting friction map data...')
-
     plt.figure()
-
     # set axis limits
     plt.xlim(min(reftrack[:, 0]) - 100.0, max(reftrack[:, 0]) + 100.0)
     plt.ylim(min(reftrack[:, 1]) - 100.0, max(reftrack[:, 1]) + 100.0)
@@ -244,10 +245,17 @@ def friction_map_plot(map):
     plt.xlabel("east in m")
     plt.ylabel("north in m")
     plt.axis('equal')
-
     plt.show()
 
 def save_map(tpa_data, track_name):
+    """
+    Save frication coefficients into json file.
+
+    Args:
+        tpa_data  :     Dictionary containing coefficient data for each grid cell
+        track_name:     Name of the track (list is given under friction_maps/tracks/track_list.txt)
+    """
+
     tpa_data_string = {str(k): v.tolist() for k, v in tpa_data.items()}
 
     now = datetime.now()
@@ -294,7 +302,7 @@ def main(args=None):
 
     try:
         while rclpy.ok():
-            fm.get_friction_data() # Call friction_callback directly as fast as possible
+            fm.get_friction_data()
             executor.spin_once(timeout_sec=0.001)
     except KeyboardInterrupt:
         pass

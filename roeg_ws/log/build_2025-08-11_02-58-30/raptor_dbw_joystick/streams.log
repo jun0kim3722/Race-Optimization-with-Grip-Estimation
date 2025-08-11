@@ -1,0 +1,87 @@
+[0.038s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_joystick
+[0.231s] -- The C compiler identification is GNU 9.4.0
+[0.231s] -- The CXX compiler identification is GNU 9.4.0
+[0.232s] -- Check for working C compiler: /usr/bin/cc
+[0.238s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.240s] -- Detecting C compiler ABI info
+[0.317s] -- Detecting C compiler ABI info - done
+[0.326s] -- Detecting C compile features
+[0.327s] -- Detecting C compile features - done
+[0.329s] -- Check for working CXX compiler: /usr/bin/c++
+[0.417s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.418s] -- Detecting CXX compiler ABI info
+[0.505s] -- Detecting CXX compiler ABI info - done
+[0.516s] -- Detecting CXX compile features
+[0.516s] -- Detecting CXX compile features - done
+[0.519s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.547s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.548s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.752s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.761s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.881s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.915s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.998s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.052s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.056s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.071s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.072s] -- Looking for pthread.h
+[1.154s] -- Looking for pthread.h - found
+[1.154s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.239s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.239s] -- Looking for pthread_create in pthreads
+[1.326s] -- Looking for pthread_create in pthreads - not found
+[1.326s] -- Looking for pthread_create in pthread
+[1.413s] -- Looking for pthread_create in pthread - found
+[1.414s] -- Found Threads: TRUE  
+[1.679s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.706s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.707s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.707s] -- Configured cppcheck include dirs: /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick/include
+[1.707s] -- Configured cppcheck exclude dirs and/or files: 
+[1.709s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.709s] -- Configured cpplint exclude dirs and/or files: 
+[1.709s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.710s] -- Added test 'lint_cmake' to check CMake code style
+[1.710s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.712s] -- Added test 'uncrustify' to check C / C++ code style
+[1.712s] -- Configured uncrustify additional arguments: 
+[1.712s] -- Added test 'xmllint' to check XML markup files
+[1.718s] -- Configuring done
+[1.726s] -- Generating done
+[1.728s] -- Build files have been written to: /ROEG/roeg_ws/build/raptor_dbw_joystick
+[1.734s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_joystick
+[1.736s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_joystick -- -j16 -l16
+[1.783s] [35m[1mScanning dependencies of target raptor_dbw_joystick_node[0m
+[1.844s] [ 66%] [32mBuilding CXX object CMakeFiles/raptor_dbw_joystick_node.dir/src/raptor_dbw_joystick.cpp.o[0m
+[1.844s] [ 66%] [32mBuilding CXX object CMakeFiles/raptor_dbw_joystick_node.dir/src/raptor_dbw_joystick_node.cpp.o[0m
+[9.874s] [100%] [32m[1mLinking CXX executable raptor_dbw_joystick_node[0m
+[10.273s] [100%] Built target raptor_dbw_joystick_node
+[10.286s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_joystick -- -j16 -l16
+[10.322s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_joystick
+[10.334s] -- Install configuration: ""
+[10.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/include
+[10.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/include/raptor_dbw_joystick
+[10.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/include/raptor_dbw_joystick/raptor_dbw_joystick.hpp
+[10.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/lib/raptor_dbw_joystick/raptor_dbw_joystick_node
+[10.340s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_joystick/lib/raptor_dbw_joystick/raptor_dbw_joystick_node" to ""
+[10.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/launch
+[10.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/launch/launch_params.yaml
+[10.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/launch/raptor_dbw_joystick_launch.py
+[10.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/ament_index/resource_index/package_run_dependencies/raptor_dbw_joystick
+[10.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/ament_index/resource_index/parent_prefix_path/raptor_dbw_joystick
+[10.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/environment/ament_prefix_path.sh
+[10.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/environment/ament_prefix_path.dsv
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/environment/path.sh
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/environment/path.dsv
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/local_setup.bash
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/local_setup.sh
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/local_setup.zsh
+[10.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/local_setup.dsv
+[10.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.dsv
+[10.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/ament_index/resource_index/packages/raptor_dbw_joystick
+[10.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/cmake/raptor_dbw_joystickConfig.cmake
+[10.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/cmake/raptor_dbw_joystickConfig-version.cmake
+[10.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.xml
+[10.349s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_joystick

@@ -1,0 +1,87 @@
+[0.019s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu
+[0.090s] -- The C compiler identification is GNU 9.4.0
+[0.150s] -- The CXX compiler identification is GNU 9.4.0
+[0.156s] -- Check for working C compiler: /usr/bin/cc
+[0.237s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.237s] -- Detecting C compiler ABI info
+[0.333s] -- Detecting C compiler ABI info - done
+[0.345s] -- Detecting C compile features
+[0.345s] -- Detecting C compile features - done
+[0.347s] -- Check for working CXX compiler: /usr/bin/c++
+[0.556s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.557s] -- Detecting CXX compiler ABI info
+[0.899s] -- Detecting CXX compiler ABI info - done
+[0.910s] -- Detecting CXX compile features
+[0.910s] -- Detecting CXX compile features - done
+[0.920s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.977s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.977s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.359s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.373s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.719s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.779s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.957s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.083s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.095s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.138s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.156s] -- Looking for pthread.h
+[2.320s] -- Looking for pthread.h - found
+[2.320s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.579s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.580s] -- Looking for pthread_create in pthreads
+[2.726s] -- Looking for pthread_create in pthreads - not found
+[2.726s] -- Looking for pthread_create in pthread
+[2.968s] -- Looking for pthread_create in pthread - found
+[2.970s] -- Found Threads: TRUE  
+[3.481s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[3.524s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.528s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.528s] -- Configured cppcheck include dirs: /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu/include
+[3.528s] -- Configured cppcheck exclude dirs and/or files: 
+[3.532s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.532s] -- Configured cpplint exclude dirs and/or files: 
+[3.534s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.535s] -- Added test 'lint_cmake' to check CMake code style
+[3.537s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.540s] -- Added test 'uncrustify' to check C / C++ code style
+[3.540s] -- Configured uncrustify additional arguments: 
+[3.542s] -- Added test 'xmllint' to check XML markup files
+[3.553s] -- Configuring done
+[3.573s] -- Generating done
+[3.578s] -- Build files have been written to: /ROEG/roeg_ws/build/raptor_pdu
+[3.600s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu
+[3.602s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu -- -j16 -l16
+[3.820s] [35m[1mScanning dependencies of target raptor_pdu_node[0m
+[4.113s] [ 33%] [32mBuilding CXX object CMakeFiles/raptor_pdu_node.dir/src/raptor_pdu.cpp.o[0m
+[4.117s] [ 66%] [32mBuilding CXX object CMakeFiles/raptor_pdu_node.dir/src/raptor_pdu_node.cpp.o[0m
+[14.782s] [100%] [32m[1mLinking CXX executable raptor_pdu_node[0m
+[15.191s] [100%] Built target raptor_pdu_node
+[15.203s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu -- -j16 -l16
+[15.234s] Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu
+[15.242s] -- Install configuration: ""
+[15.242s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/include
+[15.242s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/include/raptor_pdu
+[15.242s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/include/raptor_pdu/raptor_pdu.hpp
+[15.242s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/lib/raptor_pdu/raptor_pdu_node
+[15.248s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_pdu/lib/raptor_pdu/raptor_pdu_node" to ""
+[15.248s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/launch
+[15.248s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/launch/raptor_pdu_launch.py
+[15.248s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/launch/raptor_PDU_dbc.dbc
+[15.248s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/ament_index/resource_index/package_run_dependencies/raptor_pdu
+[15.249s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/ament_index/resource_index/parent_prefix_path/raptor_pdu
+[15.249s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/environment/ament_prefix_path.sh
+[15.249s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/environment/ament_prefix_path.dsv
+[15.249s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/environment/path.sh
+[15.249s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/environment/path.dsv
+[15.250s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/local_setup.bash
+[15.250s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/local_setup.sh
+[15.250s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/local_setup.zsh
+[15.250s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/local_setup.dsv
+[15.250s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.dsv
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/ament_index/resource_index/packages/raptor_pdu
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/cmake/raptor_pduConfig.cmake
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/cmake/raptor_pduConfig-version.cmake
+[15.251s] -- Installing: /ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.xml
+[15.255s] Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu

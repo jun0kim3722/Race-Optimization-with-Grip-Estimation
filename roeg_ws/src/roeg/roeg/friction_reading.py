@@ -72,6 +72,10 @@ class Firction_map(Node):
         self.wb_f = vehicle_info["wheelbase_front"]
         self.wb_r = vehicle_info["wheelbase_rear"]
         self.car_width = vehicle_info["vehicle_width"]
+        self.init_cambers = vehicle_info["init_cambers"]
+        self.norm_load = vehicle_info["normial_load"]
+        self.camber_f = vehicle_info["camber_front"]
+        self.camber_r = vehicle_info["camber_rear"]
 
         self.odom = self.create_subscription(
             Odometry,
@@ -108,7 +112,13 @@ class Firction_map(Node):
         # friction_map_plot(self.map)
 
     def get_friction_data(self):
-        camber = [0.08, 0.08, 0.06, 0.06] # temporary untill suspension data is gathered
+        # Estimate camber angles
+        camber = [
+            self.init_cambers[0] + self.camber_f[0] * (self.fl_load - self.norm_load)**2 + self.camber_f[1] * (self.fl_load - self.norm_load) + self.camber_f[2],
+            self.init_cambers[1] + self.camber_f[0] * (self.fr_load - self.norm_load)**2 + self.camber_f[1] * (self.fr_load - self.norm_load) + self.camber_f[2],
+            self.init_cambers[2] + self.camber_r[0] * (self.rl_load - self.norm_load)**2 + self.camber_r[1] * (self.rl_load - self.norm_load) + self.camber_r[2],
+            self.init_cambers[3] + self.camber_r[0] * (self.rr_load - self.norm_load)**2 + self.camber_r[1] * (self.rr_load - self.norm_load) + self.camber_r[2],
+        ]
 
         # calc friction coefficients
         tir_coef = np.array([
@@ -164,6 +174,12 @@ class Firction_map(Node):
         self.rl_travel = msg.rl_damper_linear_potentiometer
         self.rr_travel = msg.rr_damper_linear_potentiometer
         # self.get_logger().info(f'Received Wheel Travel: front_left={self.fl_travel}, front_right={self.fr_travel}, rear_left={self.rl_travel}, rear_right={self.rr_travel}')
+
+def get_front_camber(load):
+    return 0.0702 * load**2 - 1.21*load - 0.771
+
+def get_rear_camber(load):
+    return 0.0854 * load**2 - 1.32*load - 0.843
 
 def friction_map_plot(map):
     """

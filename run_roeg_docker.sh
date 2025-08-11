@@ -7,5 +7,4 @@ docker run -it --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v ${DATA_PATH}/requirements.txt:/ROEG/requirements.txt\
     -v ${DATA_PATH}/roeg_ws:/ROEG/roeg_ws\
-    -v ${DATA_PATH}/main_code:/ROEG/main_code\
     ros2-roeg

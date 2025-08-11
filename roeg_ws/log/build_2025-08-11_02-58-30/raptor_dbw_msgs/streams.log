@@ -1,0 +1,1401 @@
+[0.072s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_msgs
+[0.263s] -- The C compiler identification is GNU 9.4.0
+[0.371s] -- The CXX compiler identification is GNU 9.4.0
+[0.379s] -- Check for working C compiler: /usr/bin/cc
+[0.453s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.453s] -- Detecting C compiler ABI info
+[0.523s] -- Detecting C compiler ABI info - done
+[0.536s] -- Detecting C compile features
+[0.536s] -- Detecting C compile features - done
+[0.539s] -- Check for working CXX compiler: /usr/bin/c++
+[0.623s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.624s] -- Detecting CXX compiler ABI info
+[0.703s] -- Detecting CXX compiler ABI info - done
+[0.712s] -- Detecting CXX compile features
+[0.713s] -- Detecting CXX compile features - done
+[0.716s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.740s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.740s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.821s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.822s] -- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+[0.852s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.861s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.975s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.010s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.093s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.136s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[1.163s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[1.202s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.547s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[1.799s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.963s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.987s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.989s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[2.015s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.015s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.016s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.016s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.037s] -- Found PythonExtra: .so  
+[2.224s] -- Using numpy include directory: /usr/local/lib/python3.8/dist-packages/numpy/core/include
+[2.251s] -- Configuring done
+[2.392s] -- Generating done
+[2.395s] -- Build files have been written to: /ROEG/roeg_ws/build/raptor_dbw_msgs
+[2.407s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_msgs
+[2.409s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_msgs -- -j16 -l16
+[2.491s] [35m[1mScanning dependencies of target raptor_dbw_msgs__cpp[0m
+[2.494s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.511s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.665s] [  0%] Built target raptor_dbw_msgs__cpp
+[7.681s] [  0%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.686s] [  0%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.686s] [  0%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.744s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_generator_c[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/actuator_control_mode__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/door_lock__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/brake_report__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/brake_cmd__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/brake2_report__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__functions.c.o[0m
+[7.783s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/door_state__functions.c.o[0m
+[7.784s] [  2%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__functions.c.o[0m
+[7.785s] [  3%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/door_request__functions.c.o[0m
+[7.791s] [  3%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/driver_input_report__functions.c.o[0m
+[7.792s] [  3%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/button_state__functions.c.o[0m
+[7.795s] [  3%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/exit_report__functions.c.o[0m
+[7.797s] [  4%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/fault_actions_report__functions.c.o[0m
+[7.862s] [  4%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/gear_report__functions.c.o[0m
+[7.863s] [  4%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/gear__functions.c.o[0m
+[7.863s] [  4%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/gear_cmd__functions.c.o[0m
+[7.863s] [  5%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/global_enable_cmd__functions.c.o[0m
+[7.872s] [  5%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/gps_reference_report__functions.c.o[0m
+[7.872s] [  5%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/gps_remainder_report__functions.c.o[0m
+[7.879s] [  6%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/high_beam__functions.c.o[0m
+[7.880s] [  6%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/high_beam_state__functions.c.o[0m
+[7.885s] [  6%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__functions.c.o[0m
+[7.887s] [  6%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/horn_state__functions.c.o[0m
+[7.912s] [  6%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/low_beam__functions.c.o[0m
+[7.922s] [  7%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/ignition__functions.c.o[0m
+[7.923s] [  7%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/low_beam_state__functions.c.o[0m
+[7.942s] [  7%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/low_voltage_system_report__functions.c.o[0m
+[7.951s] [  7%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/misc_report__functions.c.o[0m
+[7.954s] [  8%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/misc_cmd__functions.c.o[0m
+[7.955s] [  8%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/other_actuators_report__functions.c.o[0m
+[7.958s] [  8%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/parking_brake__functions.c.o[0m
+[7.959s] [  9%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/sonar_arc_num__functions.c.o[0m
+[7.959s] [  9%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/steering2_report__functions.c.o[0m
+[7.960s] [  9%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/steering_cmd__functions.c.o[0m
+[7.974s] [  9%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/steering_report__functions.c.o[0m
+[7.986s] [ 10%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/surround_report__functions.c.o[0m
+[7.988s] [ 10%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/tire_pressure_report__functions.c.o[0m
+[8.002s] [ 10%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/turn_signal__functions.c.o[0m
+[8.008s] [ 10%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/twist_cmd__functions.c.o[0m
+[8.014s] [ 11%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/watchdog_status__functions.c.o[0m
+[8.028s] [ 11%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/wheel_position_report__functions.c.o[0m
+[8.028s] [ 11%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/wheel_speed_report__functions.c.o[0m
+[8.034s] [ 11%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/wiper_front__functions.c.o[0m
+[8.034s] [ 11%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/wiper_rear__functions.c.o[0m
+[8.034s] [ 12%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_generator_c.dir/rosidl_generator_c/raptor_dbw_msgs/msg/detail/wheel_speed_type__functions.c.o[0m
+[8.104s] [ 12%] [32m[1mLinking C shared library libraptor_dbw_msgs__rosidl_generator_c.so[0m
+[8.174s] [ 12%] Built target raptor_dbw_msgs__rosidl_generator_c
+[8.188s] [ 13%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.191s] [ 14%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.169s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_cpp[0m
+[10.213s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/actuator_control_mode__type_support.cpp.o[0m
+[10.214s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/accelerator_pedal_cmd__type_support.cpp.o[0m
+[10.214s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/accelerator_pedal_report__type_support.cpp.o[0m
+[10.214s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/brake_report__type_support.cpp.o[0m
+[10.215s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/button_state__type_support.cpp.o[0m
+[10.215s] [ 15%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/brake2_report__type_support.cpp.o[0m
+[10.221s] [ 16%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/door_request__type_support.cpp.o[0m
+[10.222s] [ 16%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/door_lock__type_support.cpp.o[0m
+[10.224s] [ 17%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/brake_cmd__type_support.cpp.o[0m
+[10.226s] [ 17%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/exit_report__type_support.cpp.o[0m
+[10.227s] [ 17%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/driver_input_report__type_support.cpp.o[0m
+[10.228s] [ 17%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/door_state__type_support.cpp.o[0m
+[10.662s] [ 18%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/fault_actions_report__type_support.cpp.o[0m
+[10.678s] [ 18%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/gear__type_support.cpp.o[0m
+[10.697s] [ 18%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/gear_cmd__type_support.cpp.o[0m
+[10.701s] [ 19%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/gear_report__type_support.cpp.o[0m
+[10.713s] [ 19%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/global_enable_cmd__type_support.cpp.o[0m
+[10.718s] [ 19%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/gps_reference_report__type_support.cpp.o[0m
+[10.735s] [ 19%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/gps_remainder_report__type_support.cpp.o[0m
+[10.784s] [ 20%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/high_beam__type_support.cpp.o[0m
+[10.797s] [ 20%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/high_beam_state__type_support.cpp.o[0m
+[10.933s] [ 20%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/hmi_global_enable_report__type_support.cpp.o[0m
+[11.017s] [ 20%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/horn_state__type_support.cpp.o[0m
+[11.146s] [ 21%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/ignition__type_support.cpp.o[0m
+[11.162s] [ 21%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/low_beam__type_support.cpp.o[0m
+[11.166s] [ 21%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/low_beam_state__type_support.cpp.o[0m
+[11.167s] [ 21%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/low_voltage_system_report__type_support.cpp.o[0m
+[11.182s] [ 22%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/misc_cmd__type_support.cpp.o[0m
+[11.259s] [ 22%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/misc_report__type_support.cpp.o[0m
+[11.275s] [ 22%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/other_actuators_report__type_support.cpp.o[0m
+[11.306s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/sonar_arc_num__type_support.cpp.o[0m
+[11.315s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/parking_brake__type_support.cpp.o[0m
+[11.337s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_c[0m
+[11.398s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/accelerator_pedal_cmd__type_support.cpp.o[0m
+[11.402s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/steering2_report__type_support.cpp.o[0m
+[11.475s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/accelerator_pedal_report__type_support.cpp.o[0m
+[11.499s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/actuator_control_mode__type_support.cpp.o[0m
+[11.538s] [ 23%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/steering_cmd__type_support.cpp.o[0m
+[11.547s] [ 24%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/brake2_report__type_support.cpp.o[0m
+[11.582s] [ 24%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/steering_report__type_support.cpp.o[0m
+[11.589s] [ 24%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/brake_cmd__type_support.cpp.o[0m
+[11.601s] [ 25%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/surround_report__type_support.cpp.o[0m
+[11.610s] [ 25%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/brake_report__type_support.cpp.o[0m
+[11.625s] [ 25%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/tire_pressure_report__type_support.cpp.o[0m
+[11.658s] [ 25%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/button_state__type_support.cpp.o[0m
+[11.668s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/door_lock__type_support.cpp.o[0m
+[11.683s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/door_request__type_support.cpp.o[0m
+[11.724s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/turn_signal__type_support.cpp.o[0m
+[11.732s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/door_state__type_support.cpp.o[0m
+[11.734s] [ 26%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/driver_input_report__type_support.cpp.o[0m
+[11.758s] [ 27%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/exit_report__type_support.cpp.o[0m
+[11.790s] [ 27%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/gear__type_support.cpp.o[0m
+[11.793s] [ 28%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/twist_cmd__type_support.cpp.o[0m
+[11.794s] [ 28%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/fault_actions_report__type_support.cpp.o[0m
+[11.806s] [ 28%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/gear_cmd__type_support.cpp.o[0m
+[11.828s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/gear_report__type_support.cpp.o[0m
+[11.843s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/watchdog_status__type_support.cpp.o[0m
+[11.861s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/gps_reference_report__type_support.cpp.o[0m
+[11.863s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/wheel_position_report__type_support.cpp.o[0m
+[11.873s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_introspection_cpp[0m
+[11.876s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/global_enable_cmd__type_support.cpp.o[0m
+[11.879s] [ 29%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/wheel_speed_report__type_support.cpp.o[0m
+[11.913s] [ 30%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/gps_remainder_report__type_support.cpp.o[0m
+[11.924s] [ 30%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/high_beam__type_support.cpp.o[0m
+[11.937s] [ 30%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/high_beam_state__type_support.cpp.o[0m
+[11.966s] [ 30%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support.cpp.o[0m
+[11.973s] [ 31%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support.cpp.o[0m
+[11.980s] [ 31%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/hmi_global_enable_report__type_support.cpp.o[0m
+[11.990s] [ 32%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/horn_state__type_support.cpp.o[0m
+[12.001s] [ 32%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support.cpp.o[0m
+[12.026s] [ 32%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/ignition__type_support.cpp.o[0m
+[12.029s] [ 33%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/wheel_speed_type__type_support.cpp.o[0m
+[12.055s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/brake2_report__type_support.cpp.o[0m
+[12.070s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/wiper_front__type_support.cpp.o[0m
+[12.089s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/brake_cmd__type_support.cpp.o[0m
+[12.147s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/brake_report__type_support.cpp.o[0m
+[12.150s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/low_beam__type_support.cpp.o[0m
+[12.170s] [ 34%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/low_beam_state__type_support.cpp.o[0m
+[12.238s] [ 35%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/low_voltage_system_report__type_support.cpp.o[0m
+[12.250s] [ 35%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/button_state__type_support.cpp.o[0m
+[12.265s] [ 35%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/raptor_dbw_msgs/msg/wiper_rear__type_support.cpp.o[0m
+[12.298s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/door_lock__type_support.cpp.o[0m
+[12.311s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/misc_cmd__type_support.cpp.o[0m
+[12.336s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/misc_report__type_support.cpp.o[0m
+[12.357s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/other_actuators_report__type_support.cpp.o[0m
+[12.413s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/door_state__type_support.cpp.o[0m
+[12.415s] [ 37%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/parking_brake__type_support.cpp.o[0m
+[12.417s] [ 36%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/door_request__type_support.cpp.o[0m
+[12.419s] [ 37%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/driver_input_report__type_support.cpp.o[0m
+[12.432s] [ 37%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/sonar_arc_num__type_support.cpp.o[0m
+[12.463s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/exit_report__type_support.cpp.o[0m
+[12.487s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/steering2_report__type_support.cpp.o[0m
+[12.511s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/steering_cmd__type_support.cpp.o[0m
+[12.528s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support.cpp.o[0m
+[12.529s] [ 38%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/gear__type_support.cpp.o[0m
+[12.554s] [ 39%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/steering_report__type_support.cpp.o[0m
+[12.583s] [ 39%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/surround_report__type_support.cpp.o[0m
+[12.596s] [ 40%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/gear_cmd__type_support.cpp.o[0m
+[12.597s] [ 40%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/gear_report__type_support.cpp.o[0m
+[12.607s] [ 40%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/tire_pressure_report__type_support.cpp.o[0m
+[12.633s] [ 40%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/turn_signal__type_support.cpp.o[0m
+[12.678s] [ 41%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/twist_cmd__type_support.cpp.o[0m
+[12.689s] [ 41%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/watchdog_status__type_support.cpp.o[0m
+[12.718s] [ 41%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support.cpp.o[0m
+[12.723s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[12.729s] [ 41%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support.cpp.o[0m
+[12.730s] [ 41%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support.cpp.o[0m
+[12.737s] [ 41%] [32m[1mLinking CXX shared library libraptor_dbw_msgs__rosidl_typesupport_cpp.so[0m
+[12.759s] [ 42%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/wheel_speed_report__type_support.cpp.o[0m
+[12.759s] [ 42%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/wheel_position_report__type_support.cpp.o[0m
+[12.809s] [ 42%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/wheel_speed_type__type_support.cpp.o[0m
+[12.827s] [ 43%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/accelerator_pedal_cmd__type_support.cpp.o[0m
+[12.878s] [ 43%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/wiper_front__type_support.cpp.o[0m
+[12.882s] [ 44%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/high_beam__type_support.cpp.o[0m
+[12.902s] [ 44%] Built target raptor_dbw_msgs__rosidl_typesupport_cpp
+[12.903s] [ 44%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/raptor_dbw_msgs/msg/wiper_rear__type_support.cpp.o[0m
+[12.922s] [ 44%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/high_beam_state__type_support.cpp.o[0m
+[12.932s] [ 44%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/accelerator_pedal_report__type_support.cpp.o[0m
+[12.933s] [ 44%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support.cpp.o[0m
+[12.960s] [ 45%] [32m[1mLinking CXX shared library libraptor_dbw_msgs__rosidl_typesupport_c.so[0m
+[12.989s] [ 45%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/horn_state__type_support.cpp.o[0m
+[13.011s] [ 45%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/actuator_control_mode__type_support.cpp.o[0m
+[13.019s] [ 45%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/brake2_report__type_support.cpp.o[0m
+[13.019s] [ 46%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/ignition__type_support.cpp.o[0m
+[13.046s] [ 46%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/low_beam_state__type_support.cpp.o[0m
+[13.064s] [ 46%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/low_beam__type_support.cpp.o[0m
+[13.116s] [ 46%] Built target raptor_dbw_msgs__rosidl_typesupport_c
+[13.133s] [ 47%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/brake_cmd__type_support.cpp.o[0m
+[13.155s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_introspection_c[0m
+[13.162s] [ 48%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support.cpp.o[0m
+[13.190s] [ 48%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/misc_cmd__type_support.cpp.o[0m
+[13.270s] [ 48%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/misc_report__type_support.cpp.o[0m
+[13.318s] [ 48%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support.c.o[0m
+[13.344s] [ 48%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support.cpp.o[0m
+[13.408s] [ 48%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support.c.o[0m
+[13.443s] [ 49%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/parking_brake__type_support.cpp.o[0m
+[13.478s] [ 49%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support.cpp.o[0m
+[13.498s] [ 49%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support.c.o[0m
+[13.502s] [ 49%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/steering2_report__type_support.cpp.o[0m
+[13.513s] [ 49%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/steering_cmd__type_support.cpp.o[0m
+[13.528s] [ 50%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/steering_report__type_support.cpp.o[0m
+[13.548s] [ 50%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/brake_report__type_support.cpp.o[0m
+[13.618s] [ 51%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/brake2_report__type_support.c.o[0m
+[13.672s] [ 51%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/surround_report__type_support.cpp.o[0m
+[13.672s] [ 51%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/button_state__type_support.cpp.o[0m
+[13.676s] [ 51%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support.cpp.o[0m
+[13.713s] [ 51%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/turn_signal__type_support.cpp.o[0m
+[13.713s] [ 52%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/door_lock__type_support.cpp.o[0m
+[13.738s] [ 52%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/door_request__type_support.cpp.o[0m
+[13.782s] [ 52%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/brake_cmd__type_support.c.o[0m
+[13.907s] [ 53%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/twist_cmd__type_support.cpp.o[0m
+[13.913s] [ 54%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/button_state__type_support.c.o[0m
+[13.918s] [ 54%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/brake_report__type_support.c.o[0m
+[13.923s] [ 54%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/door_state__type_support.cpp.o[0m
+[13.938s] [ 54%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/watchdog_status__type_support.cpp.o[0m
+[13.957s] [ 54%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support.cpp.o[0m
+[13.996s] [ 54%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support.cpp.o[0m
+[14.014s] [ 54%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/door_lock__type_support.c.o[0m
+[14.027s] [ 54%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/door_request__type_support.c.o[0m
+[14.044s] [ 55%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support.cpp.o[0m
+[14.107s] [ 55%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/wiper_front__type_support.cpp.o[0m
+[14.111s] [ 55%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/door_state__type_support.c.o[0m
+[14.113s] [ 55%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/driver_input_report__type_support.cpp.o[0m
+[14.138s] [ 55%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/raptor_dbw_msgs/msg/detail/wiper_rear__type_support.cpp.o[0m
+[14.158s] [ 56%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/driver_input_report__type_support.c.o[0m
+[14.270s] [ 57%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/exit_report__type_support.cpp.o[0m
+[14.277s] [ 57%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/exit_report__type_support.c.o[0m
+[14.313s] [ 57%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/gear__type_support.cpp.o[0m
+[14.335s] [ 57%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/fault_actions_report__type_support.cpp.o[0m
+[14.410s] [ 58%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/gear_report__type_support.cpp.o[0m
+[14.418s] [ 58%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/gear_cmd__type_support.cpp.o[0m
+[14.425s] [ 58%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support.c.o[0m
+[14.491s] [ 58%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/gear__type_support.c.o[0m
+[14.532s] [ 59%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/gear_cmd__type_support.c.o[0m
+[14.570s] [ 59%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/global_enable_cmd__type_support.cpp.o[0m
+[14.574s] [ 59%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/gps_reference_report__type_support.cpp.o[0m
+[14.580s] [ 59%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/gear_report__type_support.c.o[0m
+[14.616s] [ 59%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/gps_remainder_report__type_support.cpp.o[0m
+[14.627s] [ 59%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support.c.o[0m
+[14.735s] [ 60%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/high_beam__type_support.cpp.o[0m
+[14.737s] [ 60%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support.c.o[0m
+[14.769s] [ 60%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/high_beam_state__type_support.cpp.o[0m
+[14.770s] [ 61%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support.c.o[0m
+[14.772s] [ 61%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/hmi_global_enable_report__type_support.cpp.o[0m
+[14.780s] [ 61%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/horn_state__type_support.cpp.o[0m
+[14.788s] [ 62%] [32m[1mLinking CXX shared library libraptor_dbw_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[14.879s] [ 62%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/high_beam__type_support.c.o[0m
+[14.932s] [ 62%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/high_beam_state__type_support.c.o[0m
+[15.039s] [ 62%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support.c.o[0m
+[15.043s] [ 62%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/low_beam__type_support.cpp.o[0m
+[15.057s] [ 63%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/ignition__type_support.cpp.o[0m
+[15.120s] [ 63%] Built target raptor_dbw_msgs__rosidl_typesupport_introspection_cpp
+[15.135s] [ 64%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/horn_state__type_support.c.o[0m
+[15.163s] [ 64%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/ignition__type_support.c.o[0m
+[15.207s] [ 64%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/low_beam__type_support.c.o[0m
+[15.257s] [ 64%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/low_beam_state__type_support.c.o[0m
+[15.276s] [ 64%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/low_beam_state__type_support.cpp.o[0m
+[15.292s] [ 64%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/low_voltage_system_report__type_support.cpp.o[0m
+[15.296s] [ 65%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support.c.o[0m
+[15.299s] [ 65%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/misc_cmd__type_support.c.o[0m
+[15.371s] [ 65%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/misc_report__type_support.c.o[0m
+[15.378s] [ 66%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/misc_cmd__type_support.cpp.o[0m
+[15.382s] [ 66%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/misc_report__type_support.cpp.o[0m
+[15.405s] [ 67%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support.c.o[0m
+[15.433s] [ 67%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support.c.o[0m
+[15.435s] [ 67%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/steering2_report__type_support.c.o[0m
+[15.435s] [ 67%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/parking_brake__type_support.c.o[0m
+[15.458s] [ 67%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/other_actuators_report__type_support.cpp.o[0m
+[15.468s] [ 68%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/parking_brake__type_support.cpp.o[0m
+[15.508s] [ 68%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/sonar_arc_num__type_support.cpp.o[0m
+[15.546s] [ 68%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/steering2_report__type_support.cpp.o[0m
+[15.551s] [ 69%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/steering_cmd__type_support.c.o[0m
+[15.573s] [ 69%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/steering_cmd__type_support.cpp.o[0m
+[15.576s] [ 70%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/steering_report__type_support.cpp.o[0m
+[15.580s] [ 70%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/steering_report__type_support.c.o[0m
+[15.585s] [ 70%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/surround_report__type_support.c.o[0m
+[15.595s] [ 70%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support.c.o[0m
+[15.680s] [ 70%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/twist_cmd__type_support.c.o[0m
+[15.680s] [ 70%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/watchdog_status__type_support.c.o[0m
+[15.688s] [ 71%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/turn_signal__type_support.c.o[0m
+[15.758s] [ 71%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/surround_report__type_support.cpp.o[0m
+[15.758s] [ 71%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support.c.o[0m
+[15.776s] [ 72%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support.c.o[0m
+[15.799s] [ 72%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support.c.o[0m
+[15.817s] [ 72%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/tire_pressure_report__type_support.cpp.o[0m
+[15.872s] [ 72%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/wiper_front__type_support.c.o[0m
+[15.874s] [ 72%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/raptor_dbw_msgs/msg/detail/wiper_rear__type_support.c.o[0m
+[15.883s] [ 72%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/turn_signal__type_support.cpp.o[0m
+[15.952s] [ 73%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/twist_cmd__type_support.cpp.o[0m
+[15.970s] [ 73%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/watchdog_status__type_support.cpp.o[0m
+[16.011s] [ 74%] [32m[1mLinking C shared library libraptor_dbw_msgs__rosidl_typesupport_introspection_c.so[0m
+[16.058s] [ 74%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/wheel_speed_report__type_support.cpp.o[0m
+[16.091s] [ 74%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/wheel_position_report__type_support.cpp.o[0m
+[16.137s] [ 75%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/wheel_speed_type__type_support.cpp.o[0m
+[16.195s] [ 75%] Built target raptor_dbw_msgs__rosidl_typesupport_introspection_c
+[16.214s] [ 75%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/wiper_front__type_support.cpp.o[0m
+[16.237s] [ 75%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/raptor_dbw_msgs/msg/detail/dds_fastrtps/wiper_rear__type_support.cpp.o[0m
+[16.768s] [ 75%] [32m[1mLinking CXX shared library libraptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.892s] [ 75%] Built target raptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp
+[16.907s] [ 76%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[19.021s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_fastrtps_c[0m
+[19.100s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/door_request__type_support_c.cpp.o[0m
+[19.100s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/exit_report__type_support_c.cpp.o[0m
+[19.100s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/brake_report__type_support_c.cpp.o[0m
+[19.100s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/brake2_report__type_support_c.cpp.o[0m
+[19.100s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support_c.cpp.o[0m
+[19.101s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support_c.cpp.o[0m
+[19.101s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/door_state__type_support_c.cpp.o[0m
+[19.101s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support_c.cpp.o[0m
+[19.101s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/button_state__type_support_c.cpp.o[0m
+[19.101s] [ 78%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/door_lock__type_support_c.cpp.o[0m
+[19.102s] [ 77%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support_c.cpp.o[0m
+[19.102s] [ 79%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/brake_cmd__type_support_c.cpp.o[0m
+[19.102s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/driver_input_report__type_support_c.cpp.o[0m
+[19.102s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/gear_cmd__type_support_c.cpp.o[0m
+[19.109s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/gear__type_support_c.cpp.o[0m
+[19.110s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/gear_report__type_support_c.cpp.o[0m
+[19.631s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support_c.cpp.o[0m
+[19.636s] [ 80%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support_c.cpp.o[0m
+[19.644s] [ 81%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/high_beam__type_support_c.cpp.o[0m
+[19.644s] [ 81%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support_c.cpp.o[0m
+[19.651s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/high_beam_state__type_support_c.cpp.o[0m
+[19.651s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support_c.cpp.o[0m
+[19.651s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/horn_state__type_support_c.cpp.o[0m
+[19.653s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/ignition__type_support_c.cpp.o[0m
+[19.653s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/low_beam__type_support_c.cpp.o[0m
+[19.679s] [ 82%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/low_beam_state__type_support_c.cpp.o[0m
+[19.685s] [ 83%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support_c.cpp.o[0m
+[19.739s] [ 83%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/misc_cmd__type_support_c.cpp.o[0m
+[19.742s] [ 83%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/misc_report__type_support_c.cpp.o[0m
+[19.768s] [ 83%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support_c.cpp.o[0m
+[19.816s] [ 84%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/parking_brake__type_support_c.cpp.o[0m
+[19.846s] [ 84%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support_c.cpp.o[0m
+[20.201s] [ 84%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/steering2_report__type_support_c.cpp.o[0m
+[20.201s] [ 85%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/steering_cmd__type_support_c.cpp.o[0m
+[20.203s] [ 85%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/surround_report__type_support_c.cpp.o[0m
+[20.207s] [ 85%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/steering_report__type_support_c.cpp.o[0m
+[20.212s] [ 85%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support_c.cpp.o[0m
+[20.212s] [ 86%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/turn_signal__type_support_c.cpp.o[0m
+[20.215s] [ 86%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/twist_cmd__type_support_c.cpp.o[0m
+[20.221s] [ 86%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/watchdog_status__type_support_c.cpp.o[0m
+[20.221s] [ 86%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support_c.cpp.o[0m
+[20.250s] [ 87%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support_c.cpp.o[0m
+[20.294s] [ 87%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support_c.cpp.o[0m
+[20.304s] [ 87%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/wiper_front__type_support_c.cpp.o[0m
+[20.335s] [ 87%] [32mBuilding CXX object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/raptor_dbw_msgs/msg/detail/wiper_rear__type_support_c.cpp.o[0m
+[20.820s] [ 88%] [32m[1mLinking CXX shared library libraptor_dbw_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[20.930s] [ 88%] Built target raptor_dbw_msgs__rosidl_typesupport_fastrtps_c
+[20.941s] [35m[1mScanning dependencies of target raptor_dbw_msgs[0m
+[20.954s] [ 88%] Built target raptor_dbw_msgs
+[20.968s] [35m[1mScanning dependencies of target raptor_dbw_msgs__py[0m
+[20.983s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.238s] [ 88%] Built target raptor_dbw_msgs__py
+[25.255s] [35m[1mScanning dependencies of target raptor_dbw_msgs__python[0m
+[25.396s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_button_state_s.c.o[0m
+[25.396s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_accelerator_pedal_report_s.c.o[0m
+[25.396s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_brake_cmd_s.c.o[0m
+[25.397s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_accelerator_pedal_cmd_s.c.o[0m
+[25.397s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_brake2_report_s.c.o[0m
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_brake_report_s.c.o[0m
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_door_lock_s.c.o[0m
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_driver_input_report_s.c.o[0m
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_door_request_s.c.o[0m
+[25.397s] [ 91%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_door_state_s.c.o[0m
+[25.397s] [ 89%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_actuator_control_mode_s.c.o[0m
+[25.397s] [ 91%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_exit_report_s.c.o[0m
+[25.397s] [ 91%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_fault_actions_report_s.c.o[0m
+[25.399s] [ 92%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_gear_s.c.o[0m
+[25.407s] [ 92%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_gear_cmd_s.c.o[0m
+[25.410s] [ 92%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_gear_report_s.c.o[0m
+[25.545s] [ 93%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_high_beam_s.c.o[0m
+[25.545s] [ 93%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_gps_remainder_report_s.c.o[0m
+[25.545s] [ 93%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_global_enable_cmd_s.c.o[0m
+[25.545s] [ 93%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_gps_reference_report_s.c.o[0m
+[25.554s] [ 94%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_hmi_global_enable_report_s.c.o[0m
+[25.554s] [ 94%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_high_beam_state_s.c.o[0m
+[25.554s] [ 94%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_horn_state_s.c.o[0m
+[25.554s] [ 94%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_ignition_s.c.o[0m
+[25.554s] [ 94%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_low_beam_state_s.c.o[0m
+[25.557s] [ 95%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_low_voltage_system_report_s.c.o[0m
+[25.557s] [ 95%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_low_beam_s.c.o[0m
+[25.565s] [ 96%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_misc_cmd_s.c.o[0m
+[25.565s] [ 96%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_other_actuators_report_s.c.o[0m
+[25.565s] [ 96%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_misc_report_s.c.o[0m
+[25.620s] [ 96%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_parking_brake_s.c.o[0m
+[25.620s] [ 96%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_sonar_arc_num_s.c.o[0m
+[25.692s] [ 97%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_steering2_report_s.c.o[0m
+[25.696s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_tire_pressure_report_s.c.o[0m
+[25.697s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_surround_report_s.c.o[0m
+[25.699s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_steering_report_s.c.o[0m
+[25.710s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_steering_cmd_s.c.o[0m
+[25.710s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_watchdog_status_s.c.o[0m
+[25.710s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_turn_signal_s.c.o[0m
+[25.711s] [ 98%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_twist_cmd_s.c.o[0m
+[25.732s] [ 99%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_wheel_position_report_s.c.o[0m
+[25.742s] [ 99%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_wheel_speed_report_s.c.o[0m
+[25.744s] [ 99%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_wheel_speed_type_s.c.o[0m
+[25.745s] [100%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_wiper_front_s.c.o[0m
+[25.783s] [100%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__python.dir/rosidl_generator_py/raptor_dbw_msgs/msg/_wiper_rear_s.c.o[0m
+[25.895s] [100%] [32m[1mLinking C shared library rosidl_generator_py/raptor_dbw_msgs/libraptor_dbw_msgs__python.so[0m
+[25.955s] [100%] Built target raptor_dbw_msgs__python
+[25.966s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[25.966s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_c__pyext[0m
+[25.967s] [35m[1mScanning dependencies of target raptor_dbw_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[26.002s] [100%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/raptor_dbw_msgs/_raptor_dbw_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[26.002s] [100%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/raptor_dbw_msgs/_raptor_dbw_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.003s] [100%] [32mBuilding C object CMakeFiles/raptor_dbw_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/raptor_dbw_msgs/_raptor_dbw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.192s] [100%] [32m[1mLinking C shared library rosidl_generator_py/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[26.192s] [100%] [32m[1mLinking C shared library rosidl_generator_py/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[26.192s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[26.236s] [100%] Built target raptor_dbw_msgs__rosidl_typesupport_c__pyext
+[26.237s] [100%] Built target raptor_dbw_msgs__rosidl_typesupport_introspection_c__pyext
+[26.267s] [100%] Built target raptor_dbw_msgs__rosidl_typesupport_fastrtps_c__pyext
+[26.283s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_msgs -- -j16 -l16
+[28.154s] Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_msgs
+[28.166s] -- Install configuration: ""
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/ament_index/resource_index/rosidl_interfaces/raptor_dbw_msgs
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_position_report.h
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/button_state.h
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake_cmd.h
+[28.167s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/driver_input_report.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/watchdog_status.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/surround_report.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_state.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_beam.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_beam_state.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering_report.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gps_reference_report.h
+[28.168s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/twist_cmd.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/misc_report.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/tire_pressure_report.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wiper_rear.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_speed_type.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering2_report.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/rosidl_generator_c__visibility_control.h
+[28.169s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/accelerator_pedal_cmd.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_voltage_system_report.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/exit_report.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/global_enable_cmd.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_lock.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/accelerator_pedal_report.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake_report.h
+[28.170s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_speed_report.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/high_beam_state.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/fault_actions_report.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/ignition.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/high_beam.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/turn_signal.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_request.h
+[28.171s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gps_remainder_report.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/sonar_arc_num.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/misc_cmd.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__functions.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__functions.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__struct.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support.h
+[28.172s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__type_support.h
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__functions.h
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__struct.h
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__functions.c
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__functions.c
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__functions.h
+[28.173s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__struct.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__functions.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__functions.c
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__type_support.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__functions.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__functions.c
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__type_support.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__functions.h
+[28.174s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__struct.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__functions.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__type_support.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__struct.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__type_support.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__struct.h
+[28.175s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__functions.h
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__functions.h
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support.h
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__type_support.h
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__functions.c
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__functions.c
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__functions.c
+[28.176s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__functions.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__functions.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__functions.c
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__type_support.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__type_support.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__struct.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__functions.h
+[28.177s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__type_support.h
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__functions.c
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__functions.h
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__functions.c
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__functions.c
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__type_support.h
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__struct.h
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__struct.h
+[28.178s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__struct.h
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__functions.c
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__functions.c
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__type_support.h
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__functions.c
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__struct.h
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__functions.c
+[28.179s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__struct.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__struct.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__functions.c
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__functions.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__struct.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__functions.h
+[28.180s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__functions.c
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__functions.c
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__struct.h
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support.h
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__struct.h
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__functions.c
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__struct.h
+[28.181s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__functions.c
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__functions.c
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__functions.h
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__functions.h
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__functions.h
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__struct.h
+[28.182s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__functions.c
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__struct.h
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__functions.c
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__struct.h
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__struct.h
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__struct.h
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__struct.h
+[28.183s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__functions.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__struct.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__struct.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__type_support.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__functions.c
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__functions.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support.h
+[28.184s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support.h
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__type_support.h
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__type_support.h
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__functions.c
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__type_support.h
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__struct.h
+[28.185s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__struct.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__functions.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__type_support.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__functions.c
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__type_support.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__struct.h
+[28.186s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__functions.h
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__functions.c
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support.h
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__functions.c
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__functions.h
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__functions.h
+[28.187s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__struct.h
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__functions.c
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__functions.h
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__functions.c
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__functions.c
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__struct.h
+[28.188s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__struct.h
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__functions.h
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__struct.h
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__type_support.h
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__functions.c
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__type_support.h
+[28.189s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__functions.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__type_support.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__type_support.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__functions.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__functions.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__struct.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__struct.h
+[28.190s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__functions.c
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__type_support.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__type_support.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__struct.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__functions.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__functions.h
+[28.191s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__functions.h
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support.h
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__functions.c
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__struct.h
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__type_support.h
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__type_support.h
+[28.192s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__struct.h
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__struct.h
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__functions.h
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__functions.h
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support.h
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__functions.c
+[28.193s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__struct.h
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__type_support.h
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__struct.h
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__functions.c
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__functions.h
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__functions.c
+[28.194s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__functions.h
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__type_support.h
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support.h
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__struct.h
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__functions.c
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__type_support.h
+[28.195s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__functions.h
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__type_support.h
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__struct.h
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__functions.c
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__functions.h
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__functions.h
+[28.196s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__functions.h
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__struct.h
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__functions.h
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support.h
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__functions.c
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__functions.c
+[28.197s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__functions.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__functions.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__type_support.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__struct.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__functions.c
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__functions.h
+[28.198s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__functions.c
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__struct.h
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__functions.c
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__functions.c
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/horn_state.h
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake2_report.h
+[28.199s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/parking_brake.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/actuator_control_mode.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear_cmd.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering_cmd.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear_report.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/other_actuators_report.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/hmi_global_enable_report.h
+[28.200s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wiper_front.h
+[28.201s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/library_path.sh
+[28.201s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/library_path.dsv
+[28.202s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_generator_c.so
+[28.202s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_generator_c.so" to ""
+[28.202s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.203s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.203s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__rosidl_typesupport_fastrtps_c.h
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__rosidl_typesupport_fastrtps_c.h
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__rosidl_typesupport_fastrtps_c.h
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__rosidl_typesupport_fastrtps_c.h
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__rosidl_typesupport_fastrtps_c.h
+[28.203s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__rosidl_typesupport_fastrtps_c.h
+[28.204s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__rosidl_typesupport_fastrtps_c.h
+[28.205s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__rosidl_typesupport_fastrtps_c.h
+[28.206s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_c.h
+[28.207s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__rosidl_typesupport_fastrtps_c.h
+[28.208s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__rosidl_typesupport_fastrtps_c.h
+[28.209s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__rosidl_typesupport_fastrtps_c.h
+[28.210s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.210s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_fastrtps_c.so
+[28.211s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[28.211s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.211s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[28.211s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.211s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.212s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.213s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.214s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.215s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/dds_fastrtps
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__rosidl_typesupport_fastrtps_cpp.hpp
+[28.216s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.217s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.217s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[28.217s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__rosidl_typesupport_fastrtps_cpp.hpp
+[28.217s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.217s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__rosidl_typesupport_fastrtps_cpp.hpp
+[28.218s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[28.218s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__rosidl_typesupport_fastrtps_cpp.hpp
+[28.218s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.so
+[28.219s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[28.219s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.219s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.219s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.219s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.219s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__type_support.c
+[28.219s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support.c
+[28.219s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__rosidl_typesupport_introspection_c.h
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__type_support.c
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__rosidl_typesupport_introspection_c.h
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__type_support.c
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__rosidl_typesupport_introspection_c.h
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__type_support.c
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__type_support.c
+[28.220s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__type_support.c
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__type_support.c
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__rosidl_typesupport_introspection_c.h
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__type_support.c
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__type_support.c
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support.c
+[28.221s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__rosidl_typesupport_introspection_c.h
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__rosidl_typesupport_introspection_c.h
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__type_support.c
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support.c
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__type_support.c
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__rosidl_typesupport_introspection_c.h
+[28.222s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support.c
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__type_support.c
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__type_support.c
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__rosidl_typesupport_introspection_c.h
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support.c
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__rosidl_typesupport_introspection_c.h
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__rosidl_typesupport_introspection_c.h
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support.c
+[28.223s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__rosidl_typesupport_introspection_c.h
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__rosidl_typesupport_introspection_c.h
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__type_support.c
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support.c
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__type_support.c
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support.c
+[28.224s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__rosidl_typesupport_introspection_c.h
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__rosidl_typesupport_introspection_c.h
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__rosidl_typesupport_introspection_c.h
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__type_support.c
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__rosidl_typesupport_introspection_c.h
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support.c
+[28.225s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__rosidl_typesupport_introspection_c.h
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__type_support.c
+[28.226s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__rosidl_typesupport_introspection_c.h
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support.c
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__rosidl_typesupport_introspection_c.h
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__rosidl_typesupport_introspection_c.h
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__type_support.c
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__rosidl_typesupport_introspection_c.h
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__rosidl_typesupport_introspection_c.h
+[28.227s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__rosidl_typesupport_introspection_c.h
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__rosidl_typesupport_introspection_c.h
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__rosidl_typesupport_introspection_c.h
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__type_support.c
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__rosidl_typesupport_introspection_c.h
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__rosidl_typesupport_introspection_c.h
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__type_support.c
+[28.228s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_c.h
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_c.h
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__rosidl_typesupport_introspection_c.h
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__rosidl_typesupport_introspection_c.h
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support.c
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__rosidl_typesupport_introspection_c.h
+[28.229s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__rosidl_typesupport_introspection_c.h
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__rosidl_typesupport_introspection_c.h
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__rosidl_typesupport_introspection_c.h
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__rosidl_typesupport_introspection_c.h
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__rosidl_typesupport_introspection_c.h
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support.c
+[28.230s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__type_support.c
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__type_support.c
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__rosidl_typesupport_introspection_c.h
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__rosidl_typesupport_introspection_c.h
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support.c
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support.c
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__rosidl_typesupport_introspection_c.h
+[28.231s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__type_support.c
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__rosidl_typesupport_introspection_c.h
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__type_support.c
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__rosidl_typesupport_introspection_c.h
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support.c
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__rosidl_typesupport_introspection_c.h
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__rosidl_typesupport_introspection_c.h
+[28.232s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__type_support.c
+[28.233s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__rosidl_typesupport_introspection_c.h
+[28.233s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_introspection_c.so
+[28.234s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_introspection_c.so" to ""
+[28.234s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_c.so
+[28.234s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_c.so" to ""
+[28.234s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.234s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.234s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/parking_brake.hpp
+[28.234s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/turn_signal.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/driver_input_report.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/horn_state.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_beam.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering2_report.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/surround_report.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear.hpp
+[28.235s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/watchdog_status.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake_cmd.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/tire_pressure_report.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/global_enable_cmd.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/hmi_global_enable_report.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_speed_type.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/other_actuators_report.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_speed_report.hpp
+[28.236s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/high_beam.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_lock.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/twist_cmd.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/exit_report.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear_report.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/button_state.hpp
+[28.237s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/sonar_arc_num.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/ignition.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wiper_rear.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/accelerator_pedal_cmd.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gps_remainder_report.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gps_reference_report.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake2_report.hpp
+[28.238s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/misc_report.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/high_beam_state.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/accelerator_pedal_report.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wheel_position_report.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_state.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering_cmd.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_beam_state.hpp
+[28.239s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/brake_report.hpp
+[28.239s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__builder.hpp
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__traits.hpp
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__traits.hpp
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__builder.hpp
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__builder.hpp
+[28.240s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__struct.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__struct.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__struct.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__builder.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__traits.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__traits.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__traits.hpp
+[28.241s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__struct.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__struct.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__traits.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__traits.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__traits.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__builder.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__builder.hpp
+[28.242s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__traits.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__struct.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__builder.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__builder.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__traits.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__builder.hpp
+[28.243s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__traits.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__struct.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__struct.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__struct.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__struct.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__traits.hpp
+[28.244s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__traits.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__struct.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__traits.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__struct.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__traits.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__struct.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__builder.hpp
+[28.245s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__struct.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__builder.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__traits.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__traits.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__builder.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__traits.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__struct.hpp
+[28.246s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__struct.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__builder.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__struct.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__builder.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__traits.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__struct.hpp
+[28.247s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__traits.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__builder.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__builder.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__builder.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__struct.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__struct.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__struct.hpp
+[28.248s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__builder.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__struct.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__struct.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__struct.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__builder.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__struct.hpp
+[28.249s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__struct.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__builder.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__struct.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__traits.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__struct.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__builder.hpp
+[28.250s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__struct.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__traits.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__traits.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__traits.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__traits.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__traits.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__builder.hpp
+[28.251s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__builder.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__struct.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__traits.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__builder.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__struct.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__traits.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__builder.hpp
+[28.252s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__builder.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__struct.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__builder.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__struct.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__traits.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__builder.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__builder.hpp
+[28.253s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__traits.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__traits.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__builder.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__struct.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__builder.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__struct.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__builder.hpp
+[28.254s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__builder.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__struct.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__struct.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__traits.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__traits.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__builder.hpp
+[28.255s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__struct.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__traits.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__traits.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__traits.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__struct.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__builder.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__builder.hpp
+[28.256s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__struct.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__builder.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__builder.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__builder.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__struct.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__builder.hpp
+[28.257s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__struct.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__struct.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__traits.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__struct.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__traits.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__traits.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__traits.hpp
+[28.258s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__traits.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__traits.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__builder.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__builder.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__builder.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__traits.hpp
+[28.259s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__traits.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__struct.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__builder.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__builder.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__traits.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/low_voltage_system_report.hpp
+[28.260s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/misc_cmd.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/wiper_front.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/gear_cmd.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/actuator_control_mode.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/steering_report.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/door_request.hpp
+[28.261s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/fault_actions_report.hpp
+[28.261s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs
+[28.262s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg
+[28.262s] -- Up-to-date: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__rosidl_typesupport_introspection_cpp.hpp
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__rosidl_typesupport_introspection_cpp.hpp
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__type_support.cpp
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__type_support.cpp
+[28.262s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__type_support.cpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__type_support.cpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__type_support.cpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__rosidl_typesupport_introspection_cpp.hpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__type_support.cpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__type_support.cpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__type_support.cpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__type_support.cpp
+[28.264s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__rosidl_typesupport_introspection_cpp.hpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/fault_actions_report__rosidl_typesupport_introspection_cpp.hpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__type_support.cpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_state__type_support.cpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__rosidl_typesupport_introspection_cpp.hpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__type_support.cpp
+[28.265s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear__type_support.cpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake2_report__rosidl_typesupport_introspection_cpp.hpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/hmi_global_enable_report__type_support.cpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__type_support.cpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__type_support.cpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.266s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__rosidl_typesupport_introspection_cpp.hpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__type_support.cpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_cmd__type_support.cpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__rosidl_typesupport_introspection_cpp.hpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam__type_support.cpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/twist_cmd__type_support.cpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam__rosidl_typesupport_introspection_cpp.hpp
+[28.267s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__type_support.cpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__type_support.cpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/sonar_arc_num__type_support.cpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__rosidl_typesupport_introspection_cpp.hpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_front__type_support.cpp
+[28.268s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__rosidl_typesupport_introspection_cpp.hpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__type_support.cpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_report__type_support.cpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_type__type_support.cpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_cpp.hpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__type_support.cpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__type_support.cpp
+[28.269s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__type_support.cpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_request__rosidl_typesupport_introspection_cpp.hpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__type_support.cpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__type_support.cpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/brake_report__rosidl_typesupport_introspection_cpp.hpp
+[28.270s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/horn_state__rosidl_typesupport_introspection_cpp.hpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_beam_state__rosidl_typesupport_introspection_cpp.hpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/high_beam_state__rosidl_typesupport_introspection_cpp.hpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/button_state__rosidl_typesupport_introspection_cpp.hpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_position_report__type_support.cpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/low_voltage_system_report__rosidl_typesupport_introspection_cpp.hpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/exit_report__type_support.cpp
+[28.271s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__type_support.cpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__type_support.cpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wiper_rear__type_support.cpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/watchdog_status__rosidl_typesupport_introspection_cpp.hpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__rosidl_typesupport_introspection_cpp.hpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_remainder_report__rosidl_typesupport_introspection_cpp.hpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gear_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.272s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/wheel_speed_report__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/door_lock__type_support.cpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/gps_reference_report__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering2_report__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_cpp.hpp
+[28.273s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_cmd__type_support.cpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/misc_cmd__type_support.cpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/turn_signal__rosidl_typesupport_introspection_cpp.hpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/parking_brake__type_support.cpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/surround_report__rosidl_typesupport_introspection_cpp.hpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/tire_pressure_report__rosidl_typesupport_introspection_cpp.hpp
+[28.274s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/global_enable_cmd__type_support.cpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/ignition__type_support.cpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/actuator_control_mode__type_support.cpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/accelerator_pedal_report__rosidl_typesupport_introspection_cpp.hpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/other_actuators_report__rosidl_typesupport_introspection_cpp.hpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/include/raptor_dbw_msgs/msg/detail/driver_input_report__type_support.cpp
+[28.275s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_introspection_cpp.so
+[28.276s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[28.276s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_cpp.so
+[28.277s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__rosidl_typesupport_cpp.so" to ""
+[28.277s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/pythonpath.sh
+[28.277s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/pythonpath.dsv
+[28.278s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/__init__.py
+[28.312s] Compiling '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/__init__.py'...
+[28.314s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg
+[28.315s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_accelerator_pedal_report_s.c
+[28.315s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_horn_state.py
+[28.315s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_beam_s.c
+[28.315s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_parking_brake_s.c
+[28.315s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_accelerator_pedal_cmd_s.c
+[28.316s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_button_state_s.c
+[28.316s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_lock_s.c
+[28.316s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_high_beam_state_s.c
+[28.316s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_tire_pressure_report.py
+[28.317s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_parking_brake.py
+[28.317s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_hmi_global_enable_report.py
+[28.318s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering_report.py
+[28.318s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_twist_cmd.py
+[28.319s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_exit_report.py
+[28.319s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_voltage_system_report_s.c
+[28.320s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gps_reference_report.py
+[28.321s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering_cmd_s.c
+[28.321s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_voltage_system_report.py
+[28.322s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_misc_cmd_s.c
+[28.322s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_turn_signal.py
+[28.323s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wiper_front_s.c
+[28.323s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wiper_rear_s.c
+[28.324s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_speed_report.py
+[28.324s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gps_reference_report_s.c
+[28.325s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_other_actuators_report_s.c
+[28.326s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear_cmd_s.c
+[28.326s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_misc_report.py
+[28.326s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake_report_s.c
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_driver_input_report.py
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_button_state.py
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering2_report.py
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_speed_type_s.c
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_fault_actions_report_s.c
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake_report.py
+[28.327s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear_report_s.c
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_driver_input_report_s.c
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear_cmd.py
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear_report.py
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering_report_s.c
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_horn_state_s.c
+[28.328s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_misc_report_s.c
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_high_beam.py
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering_cmd.py
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_accelerator_pedal_cmd.py
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_speed_report_s.c
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_sonar_arc_num.py
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_other_actuators_report.py
+[28.329s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_hmi_global_enable_report_s.c
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_high_beam_state.py
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/__init__.py
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_request_s.c
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wiper_front.py
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_steering2_report_s.c
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake_cmd_s.c
+[28.330s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_turn_signal_s.c
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_accelerator_pedal_report.py
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_actuator_control_mode.py
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_speed_type.py
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear.py
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wiper_rear.py
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_position_report_s.c
+[28.331s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_fault_actions_report.py
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_sonar_arc_num_s.c
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_watchdog_status_s.c
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gps_remainder_report.py
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_high_beam_s.c
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake2_report_s.c
+[28.332s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_surround_report_s.c
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_global_enable_cmd_s.c
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake2_report.py
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_lock.py
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_actuator_control_mode_s.c
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_state_s.c
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_wheel_position_report.py
+[28.333s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_tire_pressure_report_s.c
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_watchdog_status.py
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_ignition.py
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_ignition_s.c
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_exit_report_s.c
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_beam_state_s.c
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_surround_report.py
+[28.334s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_twist_cmd_s.c
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_brake_cmd.py
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_request.py
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_door_state.py
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gps_remainder_report_s.c
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_beam_state.py
+[28.335s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_global_enable_cmd.py
+[28.336s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_low_beam.py
+[28.336s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_gear_s.c
+[28.336s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/msg/_misc_cmd.py
+[28.336s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[28.337s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[28.337s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[28.338s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[28.338s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[28.339s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages/raptor_dbw_msgs/raptor_dbw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[28.339s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__python.so
+[28.340s] -- Set runtime path of "/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/libraptor_dbw_msgs__python.so" to ""
+[28.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/AcceleratorPedalCmd.idl
+[28.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/AcceleratorPedalReport.idl
+[28.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ActuatorControlMode.idl
+[28.340s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Brake2Report.idl
+[28.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/BrakeCmd.idl
+[28.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/BrakeReport.idl
+[28.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ButtonState.idl
+[28.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorLock.idl
+[28.341s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorRequest.idl
+[28.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorState.idl
+[28.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DriverInputReport.idl
+[28.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ExitReport.idl
+[28.342s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/FaultActionsReport.idl
+[28.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Gear.idl
+[28.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GearCmd.idl
+[28.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GearReport.idl
+[28.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GlobalEnableCmd.idl
+[28.343s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GpsReferenceReport.idl
+[28.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GpsRemainderReport.idl
+[28.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HighBeam.idl
+[28.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HighBeamState.idl
+[28.344s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HmiGlobalEnableReport.idl
+[28.345s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HornState.idl
+[28.345s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Ignition.idl
+[28.345s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowBeam.idl
+[28.345s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowBeamState.idl
+[28.346s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowVoltageSystemReport.idl
+[28.346s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/MiscCmd.idl
+[28.346s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/MiscReport.idl
+[28.346s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/OtherActuatorsReport.idl
+[28.346s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ParkingBrake.idl
+[28.347s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SonarArcNum.idl
+[28.347s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Steering2Report.idl
+[28.347s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SteeringCmd.idl
+[28.347s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SteeringReport.idl
+[28.347s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SurroundReport.idl
+[28.348s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TirePressureReport.idl
+[28.348s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TurnSignal.idl
+[28.348s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TwistCmd.idl
+[28.348s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WatchdogStatus.idl
+[28.349s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelPositionReport.idl
+[28.349s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelSpeedReport.idl
+[28.349s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelSpeedType.idl
+[28.349s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WiperFront.idl
+[28.349s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WiperRear.idl
+[28.350s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/AcceleratorPedalCmd.msg
+[28.350s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/AcceleratorPedalReport.msg
+[28.350s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ActuatorControlMode.msg
+[28.350s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Brake2Report.msg
+[28.351s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/BrakeCmd.msg
+[28.351s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/BrakeReport.msg
+[28.351s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ButtonState.msg
+[28.351s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorLock.msg
+[28.351s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorRequest.msg
+[28.352s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DoorState.msg
+[28.352s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/DriverInputReport.msg
+[28.352s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ExitReport.msg
+[28.352s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/FaultActionsReport.msg
+[28.352s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Gear.msg
+[28.353s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GearCmd.msg
+[28.353s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GearReport.msg
+[28.353s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GlobalEnableCmd.msg
+[28.353s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GpsReferenceReport.msg
+[28.354s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/GpsRemainderReport.msg
+[28.354s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HighBeam.msg
+[28.354s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HighBeamState.msg
+[28.354s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HmiGlobalEnableReport.msg
+[28.354s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/HornState.msg
+[28.355s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Ignition.msg
+[28.355s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowBeam.msg
+[28.355s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowBeamState.msg
+[28.355s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/LowVoltageSystemReport.msg
+[28.356s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/MiscCmd.msg
+[28.356s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/MiscReport.msg
+[28.356s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/OtherActuatorsReport.msg
+[28.356s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/ParkingBrake.msg
+[28.356s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SonarArcNum.msg
+[28.357s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/Steering2Report.msg
+[28.357s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SteeringCmd.msg
+[28.357s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SteeringReport.msg
+[28.357s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/SurroundReport.msg
+[28.358s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TirePressureReport.msg
+[28.358s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TurnSignal.msg
+[28.358s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/TwistCmd.msg
+[28.358s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WatchdogStatus.msg
+[28.358s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelPositionReport.msg
+[28.359s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelSpeedReport.msg
+[28.359s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WheelSpeedType.msg
+[28.359s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WiperFront.msg
+[28.359s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/msg/WiperRear.msg
+[28.360s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/ament_index/resource_index/package_run_dependencies/raptor_dbw_msgs
+[28.360s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/ament_index/resource_index/parent_prefix_path/raptor_dbw_msgs
+[28.360s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/ament_prefix_path.sh
+[28.360s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/ament_prefix_path.dsv
+[28.361s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/path.sh
+[28.361s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/environment/path.dsv
+[28.361s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/local_setup.bash
+[28.361s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/local_setup.sh
+[28.361s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/local_setup.zsh
+[28.362s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/local_setup.dsv
+[28.362s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.dsv
+[28.362s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/ament_index/resource_index/packages/raptor_dbw_msgs
+[28.362s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_generator_cExport.cmake
+[28.363s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_generator_cExport-noconfig.cmake
+[28.363s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_introspection_cExport.cmake
+[28.363s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[28.363s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_cExport.cmake
+[28.364s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[28.364s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_generator_cppExport.cmake
+[28.364s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[28.364s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[28.365s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_cppExport.cmake
+[28.365s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[28.365s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/rosidl_cmake-extras.cmake
+[28.366s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.366s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[28.366s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[28.366s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.366s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[28.367s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[28.367s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgsConfig.cmake
+[28.367s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/cmake/raptor_dbw_msgsConfig-version.cmake
+[28.367s] -- Installing: /ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.xml
+[28.374s] Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_msgs

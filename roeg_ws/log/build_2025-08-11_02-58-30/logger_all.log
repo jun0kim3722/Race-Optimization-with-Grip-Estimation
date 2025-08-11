@@ -1,0 +1,674 @@
+[0.165s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.165s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f23b8471130>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f23b8471130>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f23b8471790>)
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.194s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.195s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.195s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.195s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ROEG/roeg_ws'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep_orange_msgs) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/deep_orange_msgs' with type 'ros.ament_cmake' and name 'deep_orange_msgs'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/can_dbc_parser) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/can_dbc_parser' with type 'ros.ament_cmake' and name 'can_dbc_parser'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_can) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/raptor_dbw_can' with type 'ros.ament_cmake' and name 'raptor_dbw_can'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_joystick) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/raptor_dbw_joystick' with type 'ros.ament_cmake' and name 'raptor_dbw_joystick'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_dbw_msgs) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/raptor_dbw_msgs' with type 'ros.ament_cmake' and name 'raptor_dbw_msgs'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/raptor_pdu' with type 'ros.ament_cmake' and name 'raptor_pdu'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/raptor-dbw-ros2/raptor_pdu_msgs) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raptor-dbw-ros2/raptor_pdu_msgs' with type 'ros.ament_cmake' and name 'raptor_pdu_msgs'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/roeg) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roeg' with type 'ros.ament_python' and name 'roeg'
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'can_dbc_parser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'can_dbc_parser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/can_dbc_parser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/can_dbc_parser', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'deep_orange_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'deep_orange_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/deep_orange_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/deep_orange_msgs', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/deep_orange_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'raptor_dbw_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/raptor_dbw_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/raptor_dbw_msgs', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'raptor_pdu_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/raptor_pdu_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/raptor_pdu_msgs', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_joystick' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'raptor_dbw_joystick' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/raptor_dbw_joystick', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/raptor_dbw_joystick', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'raptor_pdu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'raptor_pdu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/raptor_pdu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/raptor_pdu', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'roeg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'roeg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/roeg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/roeg', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/roeg', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'raptor_dbw_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'raptor_dbw_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ROEG/roeg_ws/build/raptor_dbw_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ROEG/roeg_ws/install/raptor_dbw_can', 'merge_install': False, 'path': '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_can', 'symlink_install': False, 'test_result_base': None}
+[0.248s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.251s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs'
+[0.257s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/roeg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/raptor_dbw_can' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/raptor_pdu' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/raptor_pdu_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/raptor_dbw_joystick' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/raptor_dbw_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/deep_orange_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/ROEG/roeg_ws/install/can_dbc_parser' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/raptor_dbw_can' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/raptor_pdu' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/raptor_pdu_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/raptor_dbw_joystick' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/raptor_dbw_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/deep_orange_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/ROEG/roeg_ws/install/can_dbc_parser' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.274s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser' with build type 'ament_cmake'
+[0.274s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser'
+[0.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.288s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs' with build type 'ament_cmake'
+[0.289s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/deep_orange_msgs' with build type 'ament_cmake'
+[0.304s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/deep_orange_msgs'
+[0.306s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.306s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_msgs
+[0.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/can_dbc_parser
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu_msgs
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/deep_orange_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/deep_orange_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/deep_orange_msgs
+[1.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/can_dbc_parser -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/can_dbc_parser
+[1.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/can_dbc_parser -- -j16 -l16
+[2.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu_msgs
+[2.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu_msgs -- -j16 -l16
+[2.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/deep_orange_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/deep_orange_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/deep_orange_msgs
+[2.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/deep_orange_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/deep_orange_msgs -- -j16 -l16
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/can_dbc_parser -- -j16 -l16
+[2.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/can_dbc_parser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/can_dbc_parser
+[2.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_dbc_parser)
+[2.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/can_dbc_parser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/can_dbc_parser
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser' for CMake module files
+[2.556s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser' for CMake config files
+[2.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_dbc_parser', 'cmake_prefix_path')
+[2.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.ps1'
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.dsv'
+[2.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.sh'
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib'
+[2.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_dbc_parser', 'ld_library_path_lib')
+[2.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.ps1'
+[2.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.dsv'
+[2.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.sh'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/bin'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib/pkgconfig/can_dbc_parser.pc'
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib/python3.8/site-packages'
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/bin'
+[2.567s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.ps1'
+[2.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.dsv'
+[2.568s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.sh'
+[2.569s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.bash'
+[2.570s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.zsh'
+[2.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/can_dbc_parser/share/colcon-core/packages/can_dbc_parser)
+[2.614s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_dbc_parser)
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser' for CMake module files
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser' for CMake config files
+[2.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_dbc_parser', 'cmake_prefix_path')
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.ps1'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.dsv'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/cmake_prefix_path.sh'
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib'
+[2.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_dbc_parser', 'ld_library_path_lib')
+[2.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.ps1'
+[2.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.dsv'
+[2.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/hook/ld_library_path_lib.sh'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/bin'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib/pkgconfig/can_dbc_parser.pc'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/lib/python3.8/site-packages'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/can_dbc_parser/bin'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.ps1'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.dsv'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.sh'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.bash'
+[2.624s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/can_dbc_parser/share/can_dbc_parser/package.zsh'
+[2.624s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/can_dbc_parser/share/colcon-core/packages/can_dbc_parser)
+[2.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_msgs -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_msgs
+[2.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_msgs -- -j16 -l16
+[9.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu_msgs -- -j16 -l16
+[9.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu_msgs
+[9.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_pdu_msgs)
+[9.308s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs' for CMake module files
+[9.309s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs' for CMake config files
+[9.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'cmake_prefix_path')
+[9.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.ps1'
+[9.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu_msgs
+[9.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.dsv'
+[9.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.sh'
+[9.313s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib'
+[9.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'ld_library_path_lib')
+[9.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.ps1'
+[9.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.dsv'
+[9.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.sh'
+[9.317s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/bin'
+[9.317s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/pkgconfig/raptor_pdu_msgs.pc'
+[9.317s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages'
+[9.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'pythonpath')
+[9.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.ps1'
+[9.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.dsv'
+[9.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.sh'
+[9.320s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/bin'
+[9.334s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.ps1'
+[9.335s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.dsv'
+[9.336s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.sh'
+[9.336s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.bash'
+[9.337s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.zsh'
+[9.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_pdu_msgs/share/colcon-core/packages/raptor_pdu_msgs)
+[10.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_pdu_msgs)
+[10.050s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs' for CMake module files
+[10.051s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs' for CMake config files
+[10.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'cmake_prefix_path')
+[10.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.ps1'
+[10.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.dsv'
+[10.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/cmake_prefix_path.sh'
+[10.055s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib'
+[10.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'ld_library_path_lib')
+[10.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.ps1'
+[10.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.dsv'
+[10.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/ld_library_path_lib.sh'
+[10.057s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/bin'
+[10.057s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/pkgconfig/raptor_pdu_msgs.pc'
+[10.058s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages'
+[10.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu_msgs', 'pythonpath')
+[10.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.ps1'
+[10.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.dsv'
+[10.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/hook/pythonpath.sh'
+[10.060s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu_msgs/bin'
+[10.061s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.ps1'
+[10.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.dsv'
+[10.062s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.sh'
+[10.063s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.bash'
+[10.063s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu_msgs/share/raptor_pdu_msgs/package.zsh'
+[10.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_pdu_msgs/share/colcon-core/packages/raptor_pdu_msgs)
+[10.064s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu' with build type 'ament_cmake'
+[10.064s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu'
+[10.065s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.065s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu
+[13.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_pdu -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_pdu
+[13.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu -- -j16 -l16
+[16.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/deep_orange_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/deep_orange_msgs -- -j16 -l16
+[16.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/deep_orange_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/deep_orange_msgs
+[16.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(deep_orange_msgs)
+[16.975s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs' for CMake module files
+[16.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/deep_orange_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/deep_orange_msgs
+[16.976s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs' for CMake config files
+[16.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'cmake_prefix_path')
+[16.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.ps1'
+[16.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.dsv'
+[16.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.sh'
+[16.979s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib'
+[16.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'ld_library_path_lib')
+[16.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.ps1'
+[16.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.dsv'
+[16.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.sh'
+[16.981s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/bin'
+[16.981s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib/pkgconfig/deep_orange_msgs.pc'
+[16.981s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages'
+[16.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'pythonpath')
+[16.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.ps1'
+[16.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.dsv'
+[16.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.sh'
+[16.983s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/bin'
+[16.985s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.ps1'
+[16.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.dsv'
+[16.985s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.sh'
+[16.986s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.bash'
+[16.986s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.zsh'
+[16.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/deep_orange_msgs/share/colcon-core/packages/deep_orange_msgs)
+[17.379s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(deep_orange_msgs)
+[17.381s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs' for CMake module files
+[17.382s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs' for CMake config files
+[17.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'cmake_prefix_path')
+[17.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.ps1'
+[17.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.dsv'
+[17.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/cmake_prefix_path.sh'
+[17.385s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib'
+[17.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'ld_library_path_lib')
+[17.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.ps1'
+[17.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.dsv'
+[17.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/ld_library_path_lib.sh'
+[17.387s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/bin'
+[17.387s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib/pkgconfig/deep_orange_msgs.pc'
+[17.387s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages'
+[17.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('deep_orange_msgs', 'pythonpath')
+[17.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.ps1'
+[17.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.dsv'
+[17.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/hook/pythonpath.sh'
+[17.389s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/deep_orange_msgs/bin'
+[17.390s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.ps1'
+[17.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.dsv'
+[17.391s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.sh'
+[17.391s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.bash'
+[17.392s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/deep_orange_msgs/share/deep_orange_msgs/package.zsh'
+[17.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/deep_orange_msgs/share/colcon-core/packages/deep_orange_msgs)
+[25.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_pdu -- -j16 -l16
+[25.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_pdu': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu
+[25.319s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_pdu)
+[25.321s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu' for CMake module files
+[25.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_pdu' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_pdu
+[25.322s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu' for CMake config files
+[25.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu', 'cmake_prefix_path')
+[25.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.ps1'
+[25.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.dsv'
+[25.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.sh'
+[25.325s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib'
+[25.325s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/bin'
+[25.325s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib/pkgconfig/raptor_pdu.pc'
+[25.325s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib/python3.8/site-packages'
+[25.325s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/bin'
+[25.326s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.ps1'
+[25.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.dsv'
+[25.327s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.sh'
+[25.327s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.bash'
+[25.327s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.zsh'
+[25.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_pdu/share/colcon-core/packages/raptor_pdu)
+[25.366s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_pdu)
+[25.368s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu' for CMake module files
+[25.368s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu' for CMake config files
+[25.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_pdu', 'cmake_prefix_path')
+[25.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.ps1'
+[25.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.dsv'
+[25.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/hook/cmake_prefix_path.sh'
+[25.371s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib'
+[25.371s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/bin'
+[25.371s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib/pkgconfig/raptor_pdu.pc'
+[25.371s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/lib/python3.8/site-packages'
+[25.371s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_pdu/bin'
+[25.372s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.ps1'
+[25.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.dsv'
+[25.373s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.sh'
+[25.374s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.bash'
+[25.374s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_pdu/share/raptor_pdu/package.zsh'
+[25.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_pdu/share/colcon-core/packages/raptor_pdu)
+[26.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_msgs -- -j16 -l16
+[28.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_msgs
+[28.621s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_msgs)
+[28.625s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs' for CMake module files
+[28.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_msgs
+[28.627s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs' for CMake config files
+[28.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'cmake_prefix_path')
+[28.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.ps1'
+[28.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.dsv'
+[28.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.sh'
+[28.634s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib'
+[28.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'ld_library_path_lib')
+[28.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.ps1'
+[28.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.dsv'
+[28.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.sh'
+[28.635s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/bin'
+[28.636s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/pkgconfig/raptor_dbw_msgs.pc'
+[28.636s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages'
+[28.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'pythonpath')
+[28.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.ps1'
+[28.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.dsv'
+[28.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.sh'
+[28.637s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/bin'
+[28.638s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.ps1'
+[28.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.dsv'
+[28.639s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.sh'
+[28.639s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.bash'
+[28.639s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.zsh'
+[28.640s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_msgs/share/colcon-core/packages/raptor_dbw_msgs)
+[30.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_msgs)
+[30.560s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs' for CMake module files
+[30.562s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs' for CMake config files
+[30.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'cmake_prefix_path')
+[30.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.ps1'
+[30.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.dsv'
+[30.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/cmake_prefix_path.sh'
+[30.564s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib'
+[30.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'ld_library_path_lib')
+[30.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.ps1'
+[30.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.dsv'
+[30.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/ld_library_path_lib.sh'
+[30.566s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/bin'
+[30.566s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/pkgconfig/raptor_dbw_msgs.pc'
+[30.566s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages'
+[30.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_msgs', 'pythonpath')
+[30.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.ps1'
+[30.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.dsv'
+[30.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/hook/pythonpath.sh'
+[30.568s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_msgs/bin'
+[30.569s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.ps1'
+[30.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.dsv'
+[30.570s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.sh'
+[30.570s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.bash'
+[30.570s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_msgs/share/raptor_dbw_msgs/package.zsh'
+[30.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_msgs/share/colcon-core/packages/raptor_dbw_msgs)
+[30.571s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick' with build type 'ament_cmake'
+[30.571s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick'
+[30.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.578s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/ROEG/roeg_ws/src/roeg' with build type 'ament_python'
+[30.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('roeg', 'ament_prefix_path')
+[30.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/roeg/share/roeg/hook/ament_prefix_path.ps1'
+[30.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/roeg/share/roeg/hook/ament_prefix_path.dsv'
+[30.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/roeg/share/roeg/hook/ament_prefix_path.sh'
+[30.582s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.582s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.590s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_can' with build type 'ament_cmake'
+[30.591s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_can'
+[30.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_joystick
+[30.791s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/ROEG/roeg_ws/src/roeg'
+[30.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.794s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_can': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_can -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_can
+[31.197s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/src/roeg': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/can_dbc_parser LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/build/roeg/prefix_override:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/roeg build --build-base /ROEG/roeg_ws/build/roeg/build install --record /ROEG/roeg_ws/build/roeg/install.log --single-version-externally-managed
+[31.446s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg' for CMake module files
+[31.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/src/roeg' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/can_dbc_parser LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/build/roeg/prefix_override:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/roeg build --build-base /ROEG/roeg_ws/build/roeg/build install --record /ROEG/roeg_ws/build/roeg/install.log --single-version-externally-managed
+[31.447s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg' for CMake config files
+[31.448s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg/lib'
+[31.448s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg/bin'
+[31.448s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg/lib/pkgconfig/roeg.pc'
+[31.448s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages'
+[31.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('roeg', 'pythonpath')
+[31.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/roeg/share/roeg/hook/pythonpath.ps1'
+[31.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/roeg/share/roeg/hook/pythonpath.dsv'
+[31.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/roeg/share/roeg/hook/pythonpath.sh'
+[31.451s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/roeg/bin'
+[31.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roeg)
+[31.453s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/roeg/share/roeg/package.ps1'
+[31.454s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/roeg/share/roeg/package.dsv'
+[31.454s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/roeg/share/roeg/package.sh'
+[31.455s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/roeg/share/roeg/package.bash'
+[31.455s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/roeg/share/roeg/package.zsh'
+[31.456s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/roeg/share/colcon-core/packages/roeg)
+[32.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_joystick -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_joystick
+[32.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_joystick -- -j16 -l16
+[32.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_can' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /ROEG/roeg_ws/src/raptor-dbw-ros2/raptor_dbw_can -DCMAKE_INSTALL_PREFIX=/ROEG/roeg_ws/install/raptor_dbw_can
+[32.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_can': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_can -- -j16 -l16
+[40.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_joystick -- -j16 -l16
+[40.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_joystick': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_joystick
+[40.918s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_joystick)
+[40.921s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick' for CMake module files
+[40.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_joystick' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_joystick
+[40.922s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick' for CMake config files
+[40.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_joystick', 'cmake_prefix_path')
+[40.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.ps1'
+[40.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.dsv'
+[40.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.sh'
+[40.925s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib'
+[40.926s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/bin'
+[40.926s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib/pkgconfig/raptor_dbw_joystick.pc'
+[40.926s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib/python3.8/site-packages'
+[40.926s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/bin'
+[40.928s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.ps1'
+[40.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.dsv'
+[40.929s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.sh'
+[40.929s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.bash'
+[40.929s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.zsh'
+[40.930s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_joystick/share/colcon-core/packages/raptor_dbw_joystick)
+[40.964s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_joystick)
+[40.966s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick' for CMake module files
+[40.966s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick' for CMake config files
+[40.966s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_joystick', 'cmake_prefix_path')
+[40.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.ps1'
+[40.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.dsv'
+[40.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/hook/cmake_prefix_path.sh'
+[40.969s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib'
+[40.969s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/bin'
+[40.969s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib/pkgconfig/raptor_dbw_joystick.pc'
+[40.969s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/lib/python3.8/site-packages'
+[40.969s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_joystick/bin'
+[40.970s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.ps1'
+[40.971s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.dsv'
+[40.971s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.sh'
+[40.971s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.bash'
+[40.972s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_joystick/share/raptor_dbw_joystick/package.zsh'
+[40.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_joystick/share/colcon-core/packages/raptor_dbw_joystick)
+[61.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_can' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /ROEG/roeg_ws/build/raptor_dbw_can -- -j16 -l16
+[61.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ROEG/roeg_ws/build/raptor_dbw_can': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_can
+[61.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_can)
+[61.499s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can' for CMake module files
+[61.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ROEG/roeg_ws/build/raptor_dbw_can' returned '0': CMAKE_PREFIX_PATH=/ROEG/roeg_ws/install/raptor_pdu:/ROEG/roeg_ws/install/raptor_pdu_msgs:/ROEG/roeg_ws/install/raptor_dbw_msgs:/ROEG/roeg_ws/install/can_dbc_parser:/ROEG/roeg_ws/install/raptor_dbw_can:/ROEG/roeg_ws/install/raptor_dbw_joystick:/ROEG/roeg_ws/install/deep_orange_msgs:/ROEG/roeg_ws/install/roeg:/opt/ros/galactic LD_LIBRARY_PATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib:/ROEG/roeg_ws/install/can_dbc_parser/lib:/ROEG/roeg_ws/install/deep_orange_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/ROEG/roeg_ws/install/raptor_pdu_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/raptor_dbw_msgs/lib/python3.8/site-packages:/ROEG/roeg_ws/install/roeg/lib/python3.8/site-packages:/ROEG/roeg_ws/install/deep_orange_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /ROEG/roeg_ws/build/raptor_dbw_can
+[61.502s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can' for CMake config files
+[61.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_can', 'cmake_prefix_path')
+[61.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.ps1'
+[61.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.dsv'
+[61.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.sh'
+[61.507s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib'
+[61.507s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/bin'
+[61.507s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib/pkgconfig/raptor_dbw_can.pc'
+[61.507s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib/python3.8/site-packages'
+[61.508s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/bin'
+[61.511s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.ps1'
+[61.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.dsv'
+[61.514s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.sh'
+[61.514s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.bash'
+[61.515s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.zsh'
+[61.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_can/share/colcon-core/packages/raptor_dbw_can)
+[61.577s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raptor_dbw_can)
+[61.581s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can' for CMake module files
+[61.582s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can' for CMake config files
+[61.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('raptor_dbw_can', 'cmake_prefix_path')
+[61.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.ps1'
+[61.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.dsv'
+[61.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/hook/cmake_prefix_path.sh'
+[61.584s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib'
+[61.584s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/bin'
+[61.584s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib/pkgconfig/raptor_dbw_can.pc'
+[61.584s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/lib/python3.8/site-packages'
+[61.584s] Level 1:colcon.colcon_core.environment:checking '/ROEG/roeg_ws/install/raptor_dbw_can/bin'
+[61.585s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.ps1'
+[61.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.dsv'
+[61.586s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.sh'
+[61.586s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.bash'
+[61.587s] INFO:colcon.colcon_core.shell:Creating package script '/ROEG/roeg_ws/install/raptor_dbw_can/share/raptor_dbw_can/package.zsh'
+[61.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ROEG/roeg_ws/install/raptor_dbw_can/share/colcon-core/packages/raptor_dbw_can)
+[61.587s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[61.587s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[61.587s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[61.588s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[61.607s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[61.607s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[61.607s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[61.608s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[61.614s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[61.615s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[61.617s] INFO:colcon.colcon_core.shell:Creating prefix script '/ROEG/roeg_ws/install/local_setup.ps1'
+[61.618s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ROEG/roeg_ws/install/_local_setup_util_ps1.py'
+[61.620s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ROEG/roeg_ws/install/setup.ps1'
+[61.621s] INFO:colcon.colcon_core.shell:Creating prefix script '/ROEG/roeg_ws/install/local_setup.sh'
+[61.622s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ROEG/roeg_ws/install/_local_setup_util_sh.py'
+[61.622s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ROEG/roeg_ws/install/setup.sh'
+[61.624s] INFO:colcon.colcon_core.shell:Creating prefix script '/ROEG/roeg_ws/install/local_setup.bash'
+[61.624s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ROEG/roeg_ws/install/setup.bash'
+[61.626s] INFO:colcon.colcon_core.shell:Creating prefix script '/ROEG/roeg_ws/install/local_setup.zsh'
+[61.627s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ROEG/roeg_ws/install/setup.zsh'
