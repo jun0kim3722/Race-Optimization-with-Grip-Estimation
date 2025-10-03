@@ -1,6 +1,10 @@
 # Race-Optimization-with-Grip-Estimation
 *Purdue VIP AI-Racing Senior Design Project, 2024–2025*
 
+<img width="1985" height="944" alt="ROEG" src="https://github.com/user-attachments/assets/5c7fb36d-6624-4e85-8e48-23a47673e5b4" />
+
+This project incorporates code originally written by [TUM - Institute of Automotive Technology](https://github.com/TUMFTM/global_racetrajectory_optimization)
+
 ## Abstract:
 Adapting to new environments is a critical challenge in autonomous driving, as the system must handle sudden changes at any speed, such as rain, snow, or black ice on highways. Professional racing drivers possess a deep understanding of vehicle dynamics and handling, a skill set mastered by only a select few worldwide. Driving at the limit demands analyzing thousands of inputs to estimate tire grip and navigate the fastest route through evolving conditions. In this work, we aim to optimize racing lines by accurately estimating tire grip and track surface conditions while minimizing the risk of losing traction. Our approach involves real-time grip estimation and continuous exploration of the racing line using sampling-based methods. This strategy reduces uncertainty and enables adaptation to continuously changing environments, resulting in a more robust racing line optimization algorithm.
 
