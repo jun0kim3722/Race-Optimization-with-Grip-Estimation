@@ -94,5 +94,3 @@ cd /ROEG/roeg_ws/src/roeg/roeg
 ***Aroldo Lugo Quintanilla @ Purdue University AE***
 - Email: alugoqui@purdue.edu
 - LinkedIn: [Aroldo Lugo Quintanilla](https://www.linkedin.com/in/aroldolugoq/?external_page=LPC.Immersive&external_control=ViewProfileLink&external_app_instance=13fe13b6-86b5-40e4-9dbf-e88fdf119ee1&external_page_instance=85f5d4d5-b45b-476a-baba-1c001d1f84d4&experiment=displayLinkedInDataPrebind)
-  
-
